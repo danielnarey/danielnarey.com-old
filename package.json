@@ -1,12 +1,12 @@
 {
-  "name": "danielnarey.github.io",
+  "name": "danielnarey.com",
   "version": "0.0.0",
   "description": "Personal website",
   "author": "Daniel C. Narey",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/danielnarey/danielnarey.github.io"
+    "url": "https://github.com/danielnarey/danielnarey.com"
   },
   "scripts": {
     "prebuild": "del dist/*",
