@@ -1,0 +1,40 @@
+- const hue = '-blue-purple'
+
+ul(
+  role='tablist'
+  aria-orientation='vertical'
+  class=`
+    border-t
+    c17_border-l
+    c17_border-r
+    c17_rounded
+    border-soft${hue}
+    bg-lighter${hue}
+    text-medium-dark${hue}
+  `
+)
+  each route, i in routes
+    li: button(
+      id=`nav-tab-${i}`
+      role='tab'
+      aria-controls=`main-tabpanel-${i}`
+      data-url=(
+        `${meta.publicUrl}${route.url}`
+      ).replace('//', '/')
+      data-active=[
+        `bg-soft${hue}`,
+        `text-white`,
+      ].join(' ')
+      class=`
+        w-full
+        px-2b
+        border-b
+        border-bright${hue}
+        font-bold
+        text-xs c17_text-sm
+        leading-base c17_leading-base-wide
+        tracking-wide
+        uppercase
+        text-left
+      `
+    )= route.label

@@ -1,0 +1,65 @@
+doctype html
+html(lang='en')
+  
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width')
+    meta(name='format-detection' content='email=no,telephone=no')
+    title= meta.title
+    meta(name='description' content=meta.description)
+    meta(name='theme-color' content='#b8d1ea')
+    link(rel='stylesheet' href=`${meta.publicUrl}index.css`)
+    link(rel='apple-touch-icon' sizes='192x192' href='media/favicon.png')
+    link(rel='icon' type='image/png' sizes='192x192' href='media/favicon.png')
+    
+  body(class=`
+    bg-white
+    text-dark-blue-purple
+    font-barlow
+    font-regular
+    text-sm c17_text-base
+    leading-sm c17_leading-base
+  `)
+    .sidebar(class=`
+      c11_border-r
+      border-softer-blue-green
+      bg-light-blue-green
+    `)
+      header#pageHeader(class=`
+        w-screen c11_w-full
+        pt-4b c11_pt-2b c17_pt-3b
+        px-1b
+        pb-4b
+      `)
+        include /header.pug
+
+      nav#pageNav(class=`
+        w-screen c11_w-full
+        c17_px-1b
+        c11_pb-2b
+      `)
+        include /nav.pug
+        
+    main#pageMain(class=`
+      w-screen
+      min-h-screen
+      pt-2b c17_pt-3b
+      pb-2b c17_pb-3b
+    `)
+      .container#pageContent
+        include /tabpanel-1.pug
+
+    footer#pageFooter(class=`
+      w-screen
+      min-h-7c
+      pt-2b c17_pt-3b
+      bg-softer-blue-green
+      text-white
+      text-sm
+      leading-sm
+    `)
+      .container
+        include /footer.pug
+
+    script(src=`${meta.publicUrl}index.js`)

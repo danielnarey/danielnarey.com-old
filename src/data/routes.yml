@@ -1,0 +1,12 @@
+-
+  url: '/'
+  label: 'Layout'
+  template: 'tabpanel-1.pug'
+-
+  url: '/specs'
+  label: 'Specs'
+  template: 'tabpanel-2.pug'
+-
+  url: '/ecosystem'
+  label: 'Ecosystem'
+  template: 'tabpanel-3.pug'

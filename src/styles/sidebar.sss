@@ -1,0 +1,19 @@
+/* A FULL-WIDTH HEADER THAT REPOSITIONS TO A SIDEBAR ON TABLET AND WIDER */
+
+.sidebar
+  @apply w-full
+
+
+@screen c11
+  .sidebar
+    @apply fixed
+    @apply w-5c
+    @apply h-screen
+    @apply overflow-y-scroll
+
+@screen c17
+  .sidebar
+    width: calc(50vw - 10rem)
+    padding-left: calc(50vw - 32rem)
+    padding-right: 1rem
+    

@@ -1,0 +1,3 @@
+https://metamodern-design.github.io/static-layout-sidebar/
+https://metamodern-design.github.io/static-layout-sidebar/specs
+https://metamodern-design.github.io/static-layout-sidebar/ecosystem

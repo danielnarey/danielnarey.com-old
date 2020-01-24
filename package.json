@@ -1,0 +1,51 @@
+{
+  "name": "@metamodern/static-layout-sidebar",
+  "version": "0.0.0",
+  "description": "A responsive sidebar-navigation layout for @metamodern/static",
+  "author": "Daniel C. Narey",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metamodern-design/static-layout-sidebar"
+  },
+  "scripts": {
+    "prebuild": "del dist/*",
+    "build": "metamodern-static",
+    "deploy": "npm run build && gh-pages -d dist",
+    "merge:dev": "git checkout master && git pull && git merge dev -s recursive -Xtheirs",
+    "lint": "eslint --fix src/scripts",
+    "sync": "git pull && git add . && git commit -m 'automated sync' && git push",
+    "test": "npm run lint && ava",
+    "update": "updtr"
+  },
+  "dependencies": {
+    "@metamodern/static": "^0.4.0",
+    "core-js": "^3.6.4",
+    "history": "^4.10.1",
+    "tailwindcss": "^1.1.4",
+    "typeface-barlow": "0.0.71",
+    "typeface-barlow-semi-condensed": "0.0.71",
+    "typeface-source-code-pro": "^1.1.3"
+  },
+  "devDependencies": {
+    "ava": "^2.4.0",
+    "del-cli": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-ava": "^9.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-types": "^1.0.2",
+    "esm": "^3.2.25",
+    "gh-pages": "^2.2.0",
+    "np": "^5.2.1",
+    "updtr": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ]
+  }
+}

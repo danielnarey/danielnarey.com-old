@@ -1,0 +1,32 @@
+/* SPACING AND TYPOGRAPHY FOR CONTENT SECTIONS */
+
+section
+  @apply w-full
+  @apply pb-2b
+
+section p:not(:last-child),
+section ol:not(:last-child),
+section ul:not(:last-child)
+  @apply mb-1b
+
+section ul
+  list-style-type: none
+
+section ul li::before
+  @apply text-base
+  content: "\2022"
+  letter-spacing: 19.02px
+
+section li
+  @apply mb-1b
+  @apply leading-sm-narrow
+  padding-left: 1.5rem
+  text-indent: -1.5rem
+
+
+@screen c17
+  section
+    @apply pb-3b
+  
+  section li
+    @apply leading-base-narrow

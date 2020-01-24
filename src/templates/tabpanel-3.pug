@@ -1,0 +1,27 @@
+include /_mixin-card.pug
+include /_mixin-tabpanel.pug
+
+
++tabpanel('3', 'Metamodern’s Open-Source Ecosystem')
+  section.flex.flex-wrap
+    each package in packages
+      .max-w-5c.p-1b
+        +card(package.name, package.hue, ['font-barlow-semi'])
+          p
+            if package.github
+              a(href=`https://github.com/${package.github}`)
+                img(
+                  src=`https://img.shields.io/github/package-json/v/${package.github}?logo=github&color=4c9ef0&label=master`
+                  alt='GitHub package.json version'
+                )
+
+            span= ' '
+
+            if package.npm
+              a(href=`https://www.npmjs.com/package/${package.npm}`)
+                img(
+                  src=`https://img.shields.io/npm/v/${package.npm}?logo=npm&color=f09e4c`
+                  alt='npm version'
+                )
+
+          p= package.description

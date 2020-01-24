@@ -1,0 +1,23 @@
+-
+  name: '@metamodern/static'
+  description: 'Build a next-gen static site with pre-rendered markup and bundled/minified assets'
+  github: 'metamodern-design/static'
+  npm: '@metamodern/static'
+  hue: 'blue'
+-
+  name: '@metamodern/design-patterns'
+  description: 'Modular stylesheets for reusable patterns with Metamodern’s design system and TailwindCSS'
+  github: 'metamodern-design/design-patterns'
+  hue: 'blue'
+-
+  name: '@metamodern/design-system'
+  description: 'A TailwindCSS configuration informed by modernist design theory'
+  github: 'metamodern-design/design-system'
+  npm: '@metamodern/design-system'
+  hue: 'blue'
+-
+  name: '@metamodern/color-system'
+  description: 'A configurable HSL color system for use with TailwindCSS'
+  github: 'metamodern-design/color-system'
+  npm: '@metamodern/color-system'
+  hue: 'blue'

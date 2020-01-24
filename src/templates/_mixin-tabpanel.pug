@@ -1,0 +1,9 @@
+mixin tabpanel(id, heading)
+  div(
+    id=`main-tabpanel-${id}`
+    role='tabpanel'
+    aria-labelledby=`nav-tab-${id}`
+  )
+    h1.px-1b.pb-2b= heading
+
+    block

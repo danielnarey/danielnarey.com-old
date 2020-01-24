@@ -1,0 +1,29 @@
+/* THEME */
+
+a:not(.unstyled)
+  @apply text-medium-blue
+
+.text-white a:not(.unstyled),
+.text-lighter a:not(.unstyled)
+  @apply text-bright-green
+
+a:visited:not(.unstyled)
+  @apply text-medium-red-purple
+
+.text-white a:visited:not(.unstyled),
+.text-lighter a:visited:not(.unstyled)
+  @apply text-medium-light-red-purple
+
+code
+  @apply bg-transparent
+  @apply font-source-code
+  
+strong
+  @apply font-semibold
+
+
+/* DISPLAY FIX FOR ICONS AND TAGS */
+
+p img,
+span img
+  @apply inline
