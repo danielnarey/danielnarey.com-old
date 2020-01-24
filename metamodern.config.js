@@ -13,6 +13,7 @@ const assets = typefaces.map((name) => [
 
 
 const designSystemConfig = {
+  rotation: -15,
   variants: {
     borderWidth: ['responsive'],
     borderRadius: ['responsive'],
