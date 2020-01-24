@@ -1,4 +1,4 @@
-- const hue = '-blue'
+- const hue = '-yellow'
 
 ul(
   role='tablist'
@@ -8,7 +8,7 @@ ul(
     c17_border-l
     c17_border-r
     c17_rounded
-    border-soft${hue}
+    border-medium-light${hue}
     bg-lighter${hue}
     text-medium-dark${hue}
   `
@@ -22,7 +22,7 @@ ul(
         `${meta.publicUrl}${route.url}`
       ).replace('//', '/')
       data-active=[
-        `bg-soft${hue}`,
+        `bg-bright${hue}`,
         `text-white`,
       ].join(' ')
       class=`
