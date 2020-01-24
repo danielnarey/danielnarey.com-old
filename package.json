@@ -1,12 +1,12 @@
 {
-  "name": "@metamodern/static-layout-sidebar",
+  "name": "danielnarey.github.io",
   "version": "0.0.0",
-  "description": "A responsive sidebar-navigation layout for @metamodern/static",
+  "description": "Personal website",
   "author": "Daniel C. Narey",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/metamodern-design/static-layout-sidebar"
+    "url": "https://github.com/danielnarey/danielnarey.github.io"
   },
   "scripts": {
     "prebuild": "del dist/*",

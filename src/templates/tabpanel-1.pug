@@ -1,19 +1,6 @@
 include /_mixin-tabpanel.pug
 
 
-+tabpanel('1', 'Sidebar Layout')
++tabpanel('1', 'About')
   section.px-1b
-    != content.layout
-      
-  .flex.flex-wrap.justify-center
-    figure.max-w-5c.mb-2b.p-1b
-      img(
-        src='media/experience-design-recolor.svg'
-        alt='Layout design graphic'
-      )
-    
-    figure.max-w-5c.mb-2b.p-1b
-      img(
-        src='media/dev-focus-recolor.svg'
-        alt='Web developer graphic'
-      )
+    != content.about
