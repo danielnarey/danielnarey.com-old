@@ -1,4 +1,4 @@
-## What I'm Doing
+## What I'm Working On
 
 Most recently, I've been building websites for local business clients and developing [tools and systems](https://github.com/metamodern-design/) to facilitate my work. 
 
