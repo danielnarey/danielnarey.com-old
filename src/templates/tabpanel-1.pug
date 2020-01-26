@@ -3,7 +3,10 @@ include /_mixin-tabpanel.pug
 
 +tabpanel('1', 'About')
   section.px-1b.text-xl.leading-xl-narrow
-    != content.hello
+    != content.aboutHello
+    
+  section.px-1b.text-lg.leading-lg-narrow
+    != content.aboutHeadline
 
-  section.px-1b
-    != content.about
+  section.typeset.px-1b
+    != content.aboutBackstory
