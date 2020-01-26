@@ -1,6 +1,10 @@
+## What I'm Doing
+
 Most recently, I've been building websites for local business clients and developing [tools and systems](https://github.com/metamodern-design/) to facilitate my work. 
 
 Having gained some experience as an independent developer, I'm seeking a longer-term opportunity that will allow me to grow as part of a technical team and find my niche in a specific developer role.
+
+## How I Got Here
 
 As someone with an innate curiosity, I'm always looking for the next thing to learn. In my mid-30s, around the time I became a new parent, I was searching for a new career path, and I rediscovered a passion for building things with code. After a couple years focused on skill-building (and parenting), I am ready to take my work to the next professional level.
 
