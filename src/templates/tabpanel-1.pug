@@ -2,12 +2,12 @@ include /_mixin-tabpanel.pug
 
 
 +tabpanel('1', 'About')
-  section.typeset.px-1b
+  section
     .mb-1b.text-xl.leading-xl-narrow
       != content.aboutHello
     
     .text-lg.leading-lg-narrow
       != content.aboutHeadline
 
-  section.typeset.px-1b
+  section
     != content.aboutMain

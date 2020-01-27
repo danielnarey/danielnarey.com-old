@@ -3,7 +3,11 @@ mixin tabpanel(id, heading)
     id=`main-tabpanel-${id}`
     role='tabpanel'
     aria-labelledby=`nav-tab-${id}`
+    class=`
+      typeset
+      px-1b
+    `
   )
-    h1.px-1b.pb-2b= heading
+    h1= heading
 
     block

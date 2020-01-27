@@ -25,6 +25,3 @@ Keeping up on debates in progressive politics with [The Ezra Klein Show](https:/
 ### Streaming TV
 
 Blown away by the thoughtful adaptation and high production quality Amazon's limited series [Philip K. Dick's Electric Dreams](https://www.amazon.com/Philip-K-Dicks-Electric-Dreams/dp/B075NTXMN9).
-
-
-*Why a "now" page? Read more about the concept [here](https://nownownow.com/about).*
