@@ -48,7 +48,7 @@ When possible, I choose to use and buy services from companies that place human 
 
 ## Other Software
 
-The same goes for my software uses/purchases:
+The considerations inform my software uses/purchases:
 
 - __Web browser:__ [Firefox](https://www.mozilla.org/en-US/firefox/browsers/) - on all of my devices
 - __Vector illustration:__ [Affinity Designer](https://affinity.serif.com/en-us/designer/ipad/)
