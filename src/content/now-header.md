@@ -1,1 +1,1 @@
-What I'm attuned to at the moment (1/25/20).
+What I'm attuned to at the moment.
