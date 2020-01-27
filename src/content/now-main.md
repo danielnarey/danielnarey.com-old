@@ -12,7 +12,7 @@ Almost done with Haruki Murakami's [Killing Commendatore](http://www.harukimurak
 
 ### Music
 
-Digging [Bill Evans](https://open.spotify.com/album/2zSAVheEFBPMuUozd6C9gt), once again. Recently discovered his [collaboration](https://open.spotify.com/album/7oviEOBGFIC09QpiWRnyFF) with Tony Bennett – beautiful arrangements of some less-often-covered standards.
+Digging [Bill Evans](https://open.spotify.com/album/2zSAVheEFBPMuUozd6C9gt), once again. Recently discovered his [collaboration with Tony Bennett](https://open.spotify.com/album/7oviEOBGFIC09QpiWRnyFF) – beautiful arrangements of some less-often-covered standards.
 
 Meditating on Maurice Ravel's unfathomably intricate [piano compositions](https://open.spotify.com/album/66ZlwcSXFuzedj7X18rCLI).
 
