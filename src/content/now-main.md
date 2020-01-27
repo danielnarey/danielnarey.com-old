@@ -1,6 +1,3 @@
-What I'm attuned to at the moment (1/25/20).
-
-
 ### Family
 
 With our son now approaching his third birthday, every waking moment is [trucks](https://www.youtube.com/user/twentytrucks) and [construction](https://www.youtube.com/watch?v=LI-GA-tkajI)!
