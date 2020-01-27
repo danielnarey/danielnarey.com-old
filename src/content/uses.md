@@ -7,4 +7,4 @@ Last year, I replaced my old MacBook with an iPad Pro, and I am now able to use 
 - __Git client:__ [Working Copy](https://workingcopyapp.com/)
 - __Terminal emulator & Mosh/SSH client:__ [Blink](http://www.blink.sh/)
 - __Remote development server__: [Digital Ocean Droplet](https://www.digitalocean.com/products/droplets/) running [Ubuntu 18](https://ubuntu.com/server) with [Node.js 12](https://nodejs.org/en/) installed ($5 per month for 1GB memory / 25 GB SSD)
-- __Git host providers__: [GitHub](https://github.com/) for public projects, [GitLab](https://about.gitlab.com/) for private repositories (e.g., client work)
+- __Git host providers__: [GitHub](https://github.com/) for public projects, [GitLab](https://about.gitlab.com/) for client work
