@@ -2,7 +2,7 @@
 
 Writing clean and maintainable CSS is still one of the most vexing parts of front-end development. A decade ago, CSS frameworks like [Bootstrap](https://getbootstrap.com/) were a big step forward in helping developers create cleaner user interfaces with more reusable components. On the down side, anyone who has tried to customize out-of-the box themes and components knows how frustrating it can be to fight with a framework when trying to override inherited styles and behaviors. As creating a unique visual style becomes even more of a marketing imperative for brands and digital products, new design solutions are required.
 
-One up-and-coming solution to the customization and maintainability problem is [TailwindCSS](https://tailwindcss.com/) - a "utility-first" framework that is designed on the principle of [composition over inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance). In brief,
+One up-and-coming solution to the customization and maintainability problem is [TailwindCSS](https://tailwindcss.com/) — a "utility-first" framework that is designed on the principle of [composition over inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance). In brief,
 
 > Instead of opinionated predesigned components, Tailwind provides low-level utility classes that let you build completely custom designs without ever leaving your HTML. If you're sick of fighting the framework, overriding unwanted styles, and battling specificity wars, Tailwind was made for you.
 
