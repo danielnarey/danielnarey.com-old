@@ -1,1 +1,1 @@
-*Check out a bunch of other "uses" pages [here](https://uses.tech/).*
+*Check out "uses" pages from a bunch of other developers [here](https://uses.tech/).*
