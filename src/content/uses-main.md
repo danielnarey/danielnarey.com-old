@@ -39,16 +39,16 @@ Keeping up with the latest trends in Node.js tooling and evaluating alternate pa
 
 ## Cloud Services
 
-When possible, I choose to use and buy services from companies that place human values and product excellence above the drive for market domination. Here are a few I've been using for a while:
+When possible, I choose to use/buy services from companies that place human values and product excellence above the drive for market domination. Here are a few I've been using for a while:
 
 - __Web hosting:__ [Netlify](https://www.netlify.com/)
 - __Email:__ [Fastmail](https://www.fastmail.com/about/)
 - __Cloud storage:__ [pCloud](https://www.pcloud.com/)
-- __Streaming music:__ [Tidal](https://tidal.com/)
+- __Streaming music:__ [TIDAL](https://tidal.com/)
 
 ## Other Software
 
-The considerations inform my software uses/purchases:
+These considerations also inform my software uses:
 
 - __Web browser:__ [Firefox](https://www.mozilla.org/en-US/firefox/browsers/) - on all of my devices
 - __Vector illustration:__ [Affinity Designer](https://affinity.serif.com/en-us/designer/ipad/)
