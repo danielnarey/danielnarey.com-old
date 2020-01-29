@@ -2,6 +2,8 @@ import forEachSelected from './for-each-selected';
 
 
 const addTabListeners = (history) => {
+  const content = document.getElementById('pageContent');
+
   forEachSelected(
     'pageNav',
     'button[data-url]',
@@ -10,6 +12,7 @@ const addTabListeners = (history) => {
 
       elem.addEventListener('click', () => {
         history.push(url);
+        content.scrollIntoView(true);
       });
     },
   );
