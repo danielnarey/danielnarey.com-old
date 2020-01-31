@@ -5,7 +5,7 @@ import isLocalRoute from './is-local-route';
 
 
 const addLinkListeners = (history) => {
-  const content = document.getElementById('pageContent');
+  const main = document.getElementById('pageMain');
 
   forEachSelected(
     'pageContent',
@@ -17,7 +17,7 @@ const addLinkListeners = (history) => {
         elem.addEventListener('click', (evt) => {
           evt.preventDefault();
           history.push(url);
-          content.scrollIntoView(true);
+          main.scrollIntoView(true);
         });
       }
     },

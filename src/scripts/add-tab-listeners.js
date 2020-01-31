@@ -2,7 +2,7 @@ import forEachSelected from './for-each-selected';
 
 
 const addTabListeners = (history) => {
-  const content = document.getElementById('pageContent');
+  const main = document.getElementById('pageMain');
 
   forEachSelected(
     'pageNav',
@@ -12,7 +12,7 @@ const addTabListeners = (history) => {
 
       elem.addEventListener('click', () => {
         history.push(url);
-        content.scrollIntoView(true);
+        main.scrollIntoView(true);
       });
     },
   );
