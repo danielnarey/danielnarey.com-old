@@ -1,4 +1,4 @@
-/* global document */
+/* global window, document */
 
 import forEachSelected from './for-each-selected';
 import isLocalRoute from './is-local-route';
@@ -17,7 +17,9 @@ const addLinkListeners = (history) => {
         elem.addEventListener('click', (evt) => {
           evt.preventDefault();
           history.push(url);
-          main.scrollIntoView(true);
+          if (window.innerWidth >= 748) {
+            main.scrollIntoView(true);
+          }
         });
       }
     },

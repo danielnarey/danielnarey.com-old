@@ -1,3 +1,5 @@
+/* global window, document */
+
 import forEachSelected from './for-each-selected';
 
 
@@ -12,7 +14,9 @@ const addTabListeners = (history) => {
 
       elem.addEventListener('click', () => {
         history.push(url);
-        main.scrollIntoView(true);
+        if (window.innerWidth >= 748) {
+          main.scrollIntoView(true);
+        }
       });
     },
   );
