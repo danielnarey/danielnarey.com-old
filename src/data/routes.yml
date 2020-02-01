@@ -3,14 +3,14 @@
   label: 'About'
   template: 'tabpanel-1.pug'
 -
-  url: '/now'
-  label: 'Now'
+  url: '/projects'
+  label: 'Projects'
   template: 'tabpanel-2.pug'
 -
   url: '/uses'
   label: 'Uses'
   template: 'tabpanel-3.pug'
 -
-  url: '/projects'
-  label: 'Projects'
+  url: '/now'
+  label: 'Now'
   template: 'tabpanel-4.pug'
