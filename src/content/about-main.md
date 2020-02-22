@@ -1,8 +1,8 @@
 ## What I'm Working On
 
-Most recently, I've been building websites for local business clients ([1](https://atlanticgrating.com), [2](https://cook-denomebail.com)) and developing [tools and systems](https://github.com/metamodern-design/) to facilitate my work. 
+Last year, I launched my web design and consulting business, [Metamodern Design Limited](https://metamodern.design). I've been building websites for local clients ([1](https://atlanticgrating.com), [2](https://cook-denomebail.com)) and developing [tools and systems](https://github.com/metamodern-design/) to facilitate my work. 
 
-Having gained some experience as an independent developer, I'm seeking a longer-term opportunity that will allow me to grow as part of a technical team and find my niche in a specific developer role.
+While gaining experience as an independent developer, I'm also seeking a longer-term opportunity that will allow me to grow as part of a technical team and find my niche in a specific developer role.
 
 ## How I Got Here
 
