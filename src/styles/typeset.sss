@@ -62,12 +62,12 @@
 .typeset ul
   list-style-type: none
 
-.typeset ul li::before
+.typeset ul:not(.unstyled) li::before
   @apply text-base
   content: "\2022"
   letter-spacing: 19.02px
 
-.typeset ul li
+.typeset ul:not(.unstyled) li
   padding-left: 1.5rem
   text-indent: -1.5rem
 
