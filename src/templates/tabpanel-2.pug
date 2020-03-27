@@ -1,12 +1,12 @@
 include /_mixin-tabpanel.pug
 
 
-+tabpanel('2', 'Projects')
++tabpanel('2', 'Uses')
   section.text-lg.leading-lg-narrow
-    != content.projectsHeader
+    != content.usesHeader
 
-  section.typeset
-    != content.projectsMain
+  section.typeset.leading-sm-narrow.c17_leading-base-narrow
+    != content.usesMain
   
   section
-    != content.projectsFooter
+    != content.usesFooter
