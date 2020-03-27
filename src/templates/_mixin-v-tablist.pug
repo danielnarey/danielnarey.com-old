@@ -1,0 +1,42 @@
+mixin vTablist(hue)
+  - const maybeHue = hue ? `-${hue}` : ''
+
+  ul(
+    role='tablist'
+    aria-orientation='vertical'
+    class=`
+      border-t
+      border-b
+      c17_border-l
+      c17_border-r
+      c17_rounded
+      border-bright${maybeHue}
+      bg-light${maybeHue}
+      text-dark${maybeHue}
+    `
+  )
+    each route, i in routes
+      li: button(
+        id=`nav-tab-${i}`
+        role='tab'
+        aria-controls=`main-tabpanel-${i}`
+        data-url=(
+          `${meta.publicUrl}${route.url}`
+        ).replace('//', '/')
+        data-active=[
+          `bg-bright${maybeHue}`,
+          `text-white`,
+        ].join(' ')
+        class=`
+          w-full
+          px-2b
+          ${(i < routes.length - 1) ? 'border-b' : ''}
+          border-bright${maybeHue}
+          font-bold
+          text-xs c17_text-sm
+          leading-base c17_leading-base-wide
+          tracking-wide
+          uppercase
+          text-left
+        `
+      )= route.label
