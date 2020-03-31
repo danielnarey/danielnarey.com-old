@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@metamodern/design-system": "^1.1.1",
-    "@metamodern/static": "^0.9.2",
+    "@metamodern/static": "^0.9.3",
     "core-js": "^3.6.4",
     "history": "^4.10.1",
     "rollup-plugin-svelte": "^5.2.0",
