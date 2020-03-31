@@ -1,3 +1,8 @@
+import designSystem from '@metamodern/design-system';
+import sugarss from 'sugarss';
+import tailwindcss from 'tailwindcss';
+import svelte from 'rollup-plugin-svelte';
+import sveltePreprocess from 'svelte-preprocess';
 import pkg from './package.json';
 
 
@@ -31,10 +36,26 @@ const postcss = {
 };
 
 
+const rollup = {
+  rollupPlugins: [
+    svelte({
+      css: (css) => { css.write('./src/styles/Svelte.css', false); },
+      preprocess: sveltePreprocess({ 
+        postcss: {
+          parser: sugarss,
+          plugins: [tailwindcss(designSystem(designSystemConfig))],
+        },
+      }),
+    }),
+  ],
+};
+
+
 const metamodernConfig = {
   assets,
   designSystemConfig,
   postcss,
+  rollup,
 };
 
 
