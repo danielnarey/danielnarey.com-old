@@ -31,7 +31,7 @@
   
   p.desc
     @apply font-barlow-semi-condensed
-    @apply leading-sm-narrow c17_leading-base-narrow
+    @apply leading-sm-narrow
     
   @screen c11
     header
