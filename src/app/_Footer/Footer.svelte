@@ -6,7 +6,7 @@
 
 <template lang="pug">
   section
-  	!= '{@html content.html}'
+    != '{@html content.html}'
 
 </template>
 
