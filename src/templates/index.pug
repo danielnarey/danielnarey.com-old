@@ -13,25 +13,5 @@ html(lang='en')
     link(rel='apple-touch-icon' sizes='192x192' href='media/favicon.png')
     link(rel='icon' type='image/png' sizes='192x192' href='media/favicon.png')
     
-  body(class=`
-    bg-near-white
-    text-darker
-    font-barlow
-    font-regular
-    text-sm c17_text-base
-    leading-sm c17_leading-base
-  `)
-    .sidebar(class=`
-      c11_border-r
-      border-darker-blue
-      bg-darker-blue
-    `)
-      #pageHeader
-
-      #pageNav
-        
-    #pageMain
-
-    #pageFooter
-
+  body
     script(src=`${meta.publicUrl}index.js`)
