@@ -17,7 +17,7 @@
 <template lang="pug">        
   main
     .container
-      p= '{label}'
+      p= '...'
     
 </template>
 

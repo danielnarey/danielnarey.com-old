@@ -1,5 +1,5 @@
 <script>
-  import routes from '../main/Main.svelte';
+  import { routes } from '../main/Main.svelte';
   
   export let publicUrl = '';
   
