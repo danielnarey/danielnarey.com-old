@@ -14,20 +14,10 @@
 </script>
 
 
-<script>
-  import { Router, Route } from 'svero';
-
-</script>
-
-
 <template lang="pug">        
   main
     .container
-      Router
-        +each('routes as [path, label, component]')
-          Route(path='{path}' component='{component}')
-
-        Route(path='*' redirect='/')
+      p= '{label}'
     
 </template>
 

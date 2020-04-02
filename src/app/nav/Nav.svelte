@@ -1,11 +1,10 @@
 <script>
-  import { navigateTo } from 'svero'
   import routes from '../main/Main.svelte';
   
   export let publicUrl = '';
   
   const setRoute = (path) => (
-    () => navigateTo(`${publicUrl}${path}`.replace('//', '/'))
+    () => console.log(`${publicUrl}${path}`.replace('//', '/'))
   );
 
 </script>
