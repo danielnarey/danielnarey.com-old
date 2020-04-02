@@ -7,6 +7,7 @@ import routeMap from '../.metamodern/route-map';
 import Footer from '../app/footer/Footer.svelte';
 import Header from '../app/header/Header.svelte';
 import Nav from '../app/nav/Nav.svelte';
+import Main from '../app/main/Main.svelte';
 
 try {
   const footer = new Footer({
@@ -19,6 +20,10 @@ try {
   
   const nav = new Nav({
     target: document.getElementById('pageNav'),
+  });
+  
+  const main = new Main({
+    target: document.getElementById('pageMain'),
   });
 
   const history = createBrowserHistory();
