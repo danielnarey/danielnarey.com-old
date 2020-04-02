@@ -23,7 +23,7 @@
             role='tab'
             aria-controls='main-tabpanel-{i}'
             on:click='{setRoute(path)}'
-          )= label
+          )= '{label}'
 
 </template>
 
