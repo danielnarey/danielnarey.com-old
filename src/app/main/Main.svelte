@@ -34,12 +34,12 @@
 
 <style lang="postcss">
   main
-    w-screen min-h-screen
-    py-2b
+    @apply w-screen min-h-screen
+    @apply py-2b
 
       
   @screen c17
     main
-      py-3b
+      @apply py-3b
 
 </style>
