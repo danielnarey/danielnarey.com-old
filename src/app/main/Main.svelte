@@ -20,10 +20,26 @@
 </script>
 
 
-<template lang="pug">
-  Router
-    Route(path='*' redirect='/')
-    +each('routes as [path, label, component]')
-      Route(path='{path}' component='{component}')
+<template lang="pug">        
+  main
+    .container
+      Router
+        +each('routes as [path, label, component]')
+          Route(path='{path}' component='{component}')
+
+        Route(path='*' redirect='/')
     
 </template>
+
+
+<style lang="postcss">
+  main
+    w-screen min-h-screen
+    py-2b
+
+      
+  @screen c17
+    main
+      py-3b
+
+</style>
