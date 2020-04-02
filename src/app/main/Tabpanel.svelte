@@ -11,7 +11,7 @@
     role='tabpanel'
     aria-labelledby='nav-tab-{id}'
   )
-    h1= heading
+    h1= '{heading}'
 
     slot
 
