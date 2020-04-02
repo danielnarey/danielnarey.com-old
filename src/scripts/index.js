@@ -1,7 +1,6 @@
-import Footer from '../app/footer/Footer.svelte';
-import Header from '../app/header/Header.svelte';
-import Nav from '../app/nav/Nav.svelte';
-import Main from '../app/main/Main.svelte';
+/* global document */
+
+import App from '../app/App.svelte';
 
 
 try {
