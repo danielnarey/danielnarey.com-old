@@ -20,6 +20,6 @@
 
 <style lang="postcss">
   div
-    px-1b
+    @apply px-1b
 
 </style>
