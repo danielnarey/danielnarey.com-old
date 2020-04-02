@@ -17,7 +17,7 @@
 <template lang="pug">        
   main
     .container
-      p= '...'
+      About
     
 </template>
 
