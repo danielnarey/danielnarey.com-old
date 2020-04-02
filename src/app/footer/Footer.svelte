@@ -5,7 +5,7 @@
 
 
 <template lang="pug">
-  footer
+  footer.circuit-board
     .container
       section
         != '{@html content.html}'
@@ -17,7 +17,7 @@
   footer
     @apply w-screen min-h-7c
     @apply pt-2b
-    @apply bg-darker-blue circuit-board
+    @apply bg-darker-blue
     @apply text-white text-sm leading-sm
   
   p
