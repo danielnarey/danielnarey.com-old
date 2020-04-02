@@ -28,12 +28,7 @@ html(lang='en')
     `)
       #pageHeader
 
-      nav#pageNav(class=`
-        w-screen c11_w-full
-        c17_px-1b
-        c11_pb-4b
-      `)
-        include /nav.pug
+      #pageNav
         
     main#pageMain(class=`
       w-screen
@@ -44,17 +39,6 @@ html(lang='en')
       .container#pageContent
         include /tabpanel-0.pug
 
-    footer#pageFooter(class=`
-      w-screen
-      min-h-7c
-      pt-2b c17_pt-3b
-      bg-darker-blue
-      circuit-board
-      text-white
-      text-sm
-      leading-sm
-    `)
-      .container
-        #footerContent
+    #pageFooter
 
     script(src=`${meta.publicUrl}index.js`)

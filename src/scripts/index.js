@@ -4,16 +4,21 @@ import { createBrowserHistory } from 'history';
 import startTabRouter from './start-tab-router';
 import routeMap from '../.metamodern/route-map';
 
-import Footer from '../app/_Footer/Footer.svelte';
-import Header from '../app/_Header/Header.svelte';
+import Footer from '../app/footer/Footer.svelte';
+import Header from '../app/header/Header.svelte';
+import Nav from '../app/nav/Nav.svelte';
 
 try {
   const footer = new Footer({
-    target: document.getElementById('footerContent'),
+    target: document.getElementById('pageFooter'),
   });
   
   const header = new Header({
     target: document.getElementById('pageHeader'),
+  });
+  
+  const nav = new Nav({
+    target: document.getElementById('pageNav'),
   });
 
   const history = createBrowserHistory();

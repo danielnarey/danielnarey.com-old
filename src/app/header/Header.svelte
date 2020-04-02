@@ -24,6 +24,9 @@
   
   img
     @apply border rounded border-darker-blue
+    
+  p
+    @apply text-lighter
   
   p.title
     @apply pt-one-and-half-b pb-1b
@@ -32,12 +35,14 @@
   p.desc
     @apply font-barlow-semi-condensed
     @apply leading-sm-narrow
-    
+
+
   @screen c11
     header
       @apply w-full
       @apply pt-2b
-    
+
+
   @screen c17
     header
       @apply pt-3b
