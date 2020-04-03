@@ -4,8 +4,10 @@
   const setRoute = (path) => {
     const fullPath = `${publicUrl}${path}`.replace('//', '/');
     
-    console.log(`pushState: ${path}`);
-    history.pushState(fullPath, null, fullPath);
+    return () => {
+      console.log(`pushState: ${path}`);
+      history.pushState(fullPath, null, fullPath);
+    };
   };
   
   const routes = [
