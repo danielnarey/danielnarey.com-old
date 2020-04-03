@@ -1,14 +1,11 @@
 <script context="module">
   import About from './about/About.svelte';
-  import Projects from './projects/Projects.svelte';
-  import Uses from './uses/Uses.svelte';
-  import Now from './now/Now.svelte';
   
   export const routes = [
-    ['/', 'About', About],
-    ['/projects', 'Projects', Projects],
-    ['/uses', 'Uses', Uses],
-    ['/now', 'Now', Now],
+    ['/', About],
+    ['/projects', Projects],
+    ['/uses', Uses],
+    ['/now', Now],
   ];
 
 </script>
@@ -16,7 +13,7 @@
 
 <template lang="pug">        
   main
-    .container
+    .container#pageContent 
       About
     
 </template>

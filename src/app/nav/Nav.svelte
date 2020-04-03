@@ -3,9 +3,12 @@
   
   export let publicUrl = '';
   
-  const setRoute = (path) => (
-    () => console.log(`${publicUrl}${path}`.replace('//', '/'))
-  );
+  const setRoute = (path) => {
+    const fullPath = `${publicUrl}${path}`.replace('//', '/');
+    
+    console.log(`pushState: ${path}`);
+    history.pushState(fullPath, null, fullPath);
+  };
 
 </script>
 
