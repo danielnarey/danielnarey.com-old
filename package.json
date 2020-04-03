@@ -23,6 +23,7 @@
     "@metamodern/static": "^0.9.3",
     "core-js": "^3.6.4",
     "history": "^4.10.1",
+    "navaid": "^1.1.0",
     "rollup-plugin-svelte": "^5.2.0",
     "sugarss": "^2.0.0",
     "svelte": "^3.0.0",
