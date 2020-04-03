@@ -9,6 +9,13 @@
     console.log(`pushState: ${path}`);
     history.pushState(fullPath, null, fullPath);
   };
+  
+  const routes = [
+    ['/', 'About'],
+    ['/projects', 'Projects'],
+    ['/uses', 'Uses'],
+    ['/now', 'Now'],
+  ];
 
 </script>
 

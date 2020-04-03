@@ -1,12 +1,5 @@
-<script context="module">
+<script>
   import About from './about/About.svelte';
-  
-  export const routes = [
-    ['/', About],
-    ['/projects', Projects],
-    ['/uses', Uses],
-    ['/now', Now],
-  ];
 
 </script>
 
