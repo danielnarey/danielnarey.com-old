@@ -1,6 +1,4 @@
-<script>
-  import { routes } from '../main/Main.svelte';
-  
+<script>  
   export let publicUrl = '';
   
   const setRoute = (path) => {
