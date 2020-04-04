@@ -1,19 +1,21 @@
+/* global document */
+
 import navaid from 'navaid';
 
 
-const startRouter = (target, routes) => {
+const startRouter = (targetId, routes) => {
   const router = navaid();
-  let current;
+  const target = document.getElementById(targetId);
 
   routes.forEach(([path, component]) => {
     router.on(path, () => {
-      if (current) {
-        current.$destroy();
-      }
-
-      current = new component({
-        target: document.getElementById(target),
+      const children = Array.from(target.childNodes);
+      
+      children.forEach((node) => {
+        node.parentNode.removeChild(node);
       });
+
+      new component({ target });
 
       console.log(`loaded: ${path}`);
     });
