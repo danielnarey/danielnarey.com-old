@@ -7,10 +7,11 @@ const startRouter = (targetId, routes) => {
   console.log('starting router...');
   
   const router = navaid();
-  const target = document.getElementById(targetId);
 
   routes.forEach(({ path, component }) => {
     router.on(path, () => {
+      const target = document.getElementById(targetId);
+      
       Array.from(target.childNodes).forEach((node) => {
         node.parentNode.removeChild(node);
       });
