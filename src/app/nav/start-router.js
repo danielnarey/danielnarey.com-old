@@ -11,7 +11,7 @@ const startRouter = (targetId, routes) => {
   routes.forEach(({ path, component }) => {
     router.on(path, () => {
       const target = document.getElementById(targetId);
-      
+
       Array.from(target.childNodes).forEach((node) => {
         node.parentNode.removeChild(node);
       });
@@ -24,7 +24,7 @@ const startRouter = (targetId, routes) => {
   
   router.listen();
   
-  return (path) => () => router.route(path);
+  return router;
 };
 
 
