@@ -13,7 +13,7 @@
       role='tablist'
       aria-orientation='vertical'
     )
-      +each('routes as [path, label], i')
+      +each('routes as { path, label }, i')
         li
           button(
             id='nav-tab-{i}'
