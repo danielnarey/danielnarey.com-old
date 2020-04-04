@@ -3,11 +3,13 @@ import navaid from 'navaid';
 
 const startRouter = (target, routes) => {
   const router = navaid();
-  let current = new Map(routes).get('/');
+  let current;
 
   routes.forEach(([path, component]) => {
     router.on(path, () => {
-      current.$destroy();
+      if (current) {
+        current.$destroy();
+      }
 
       current = new component({
         target: document.getElementById(target),
