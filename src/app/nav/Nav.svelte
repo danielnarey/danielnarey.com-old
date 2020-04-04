@@ -1,21 +1,8 @@
-<script>  
-  export let publicUrl = '';
+<script>
+  import routes from './routes.js';
+  import startRouter from './start-router.js';
   
-  const setRoute = (path) => {
-    const fullPath = `${publicUrl}${path}`.replace('//', '/');
-    
-    return () => {
-      console.log(`pushState: ${path}`);
-      history.pushState(fullPath, null, fullPath);
-    };
-  };
-  
-  const routes = [
-    ['/', 'About'],
-    ['/projects', 'Projects'],
-    ['/uses', 'Uses'],
-    ['/now', 'Now'],
-  ];
+  const navigate = startRouter('pageContent', routes);
 
 </script>
 
@@ -32,7 +19,7 @@
             id='nav-tab-{i}'
             role='tab'
             aria-controls='main-tabpanel-{i}'
-            on:click='{setRoute(path)}'
+            on:click='{navigate(path)}'
           )= '{label}'
 
 </template>

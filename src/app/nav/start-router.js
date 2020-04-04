@@ -4,14 +4,14 @@ import navaid from 'navaid';
 
 
 const startRouter = (targetId, routes) => {
+  console.log('starting router...');
+  
   const router = navaid();
   const target = document.getElementById(targetId);
 
   routes.forEach(([path, component]) => {
     router.on(path, () => {
-      const children = Array.from(target.childNodes);
-      
-      children.forEach((node) => {
+      Array.from(target.childNodes).forEach((node) => {
         node.parentNode.removeChild(node);
       });
 
@@ -22,7 +22,9 @@ const startRouter = (targetId, routes) => {
   });
   
   router.listen();
+  
+  return (path) => () => router.route(path);
 };
 
 
-export default startRouter;
+export default router;
