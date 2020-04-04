@@ -27,4 +27,4 @@ const startRouter = (targetId, routes) => {
 };
 
 
-export default router;
+export default startRouter;
