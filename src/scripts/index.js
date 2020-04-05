@@ -2,7 +2,7 @@
 
 import App from '../app/App.svelte';
 import routes from './routes.js';
-import startRouter from 'start-router';
+import startRouter from './start-router.js';
 
 
 try {
