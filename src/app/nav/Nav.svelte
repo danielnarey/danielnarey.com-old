@@ -1,8 +1,7 @@
 <script>
-  import routes from './routes.js';
-  import startRouter from './start-router.js';
+  import routes from '../../scripts/routes.js';
   
-  const { route } = startRouter('pageContent', routes);
+  const navigate = (path) => () => history.pushState(path, null, path);
 
 </script>
 
@@ -19,7 +18,7 @@
             id='nav-tab-{i}'
             role='tab'
             aria-controls='main-tabpanel-{i}'
-            on:click!='{() => route(path)}'
+            on:click='{navigate(path)}'
           )= '{label}'
 
 </template>

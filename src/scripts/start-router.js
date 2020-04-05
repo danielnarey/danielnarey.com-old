@@ -23,8 +23,6 @@ const startRouter = (targetId, routes) => {
   });
   
   router.listen();
-  
-  return router;
 };
 
 
