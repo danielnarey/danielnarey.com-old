@@ -16,7 +16,7 @@ const startRouter = (targetId, routes) => {
         node.parentNode.removeChild(node);
       });
 
-      new component({ target });
+      component({ target });
 
       console.log(`loaded: ${path}`);
     });
