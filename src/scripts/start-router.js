@@ -4,8 +4,6 @@ import navaid from 'navaid';
 
 
 const startRouter = (targetId, routes) => {
-  console.log('starting router...');
-  
   const router = navaid();
 
   routes.forEach(({ path, component }) => {
@@ -16,9 +14,7 @@ const startRouter = (targetId, routes) => {
         node.parentNode.removeChild(node);
       });
 
-      component({ target });
-
-      console.log(`loaded: ${path}`);
+      new component({ target });
     });
   });
   

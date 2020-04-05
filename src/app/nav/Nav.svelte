@@ -1,7 +1,12 @@
 <script>
   import routes from '../../scripts/routes.js';
   
-  const navigateTo = (path) => () => history.pushState(path, null, path);
+  let current = window.location.pathname;
+  
+  const navigate = (path) => () => {
+    history.pushState(path, null, path);
+    current = path;
+  };
   
 </script>
 
@@ -18,8 +23,8 @@
             id='nav-tab-{i}'
             role='tab'
             aria-controls='main-tabpanel-{i}'
-            class:active='{window.location.pathname === path}'
-            on:click='{navigateTo(path)}'
+            class:active='{current === path}'
+            on:click='{navigate(path)}'
           )= '{label}'
 
 </template>
