@@ -5,6 +5,11 @@
   
   const navigate = (path) => () => {
     history.pushState(path, null, path);
+    
+    if (window.innerWidth >= 704) {
+      document.querySelector('main').scrollIntoView(true);
+    }
+
     current = path;
   };
   
