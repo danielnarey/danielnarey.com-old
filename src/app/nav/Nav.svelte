@@ -3,8 +3,6 @@
   
   const navigateTo = (path) => () => history.pushState(path, null, path);
   
-  $: currentPath = window.location.pathname;
-  
 </script>
 
 
@@ -20,7 +18,7 @@
             id='nav-tab-{i}'
             role='tab'
             aria-controls='main-tabpanel-{i}'
-            class:active='{currentPath === path}'
+            class:active='{window.location.pathname === path}'
             on:click='{navigateTo(path)}'
           )= '{label}'
 
