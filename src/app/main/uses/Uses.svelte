@@ -10,7 +10,7 @@
 <template lang="pug">
   Tabpanel(
     id='2'
-    heading='Projects'
+    heading='Uses'
   )
     section.header
         != '{@html header.html}'

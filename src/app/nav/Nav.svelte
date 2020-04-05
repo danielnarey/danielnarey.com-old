@@ -1,10 +1,16 @@
 <script>
   import routes from '../../scripts/routes.js';
   
-  const navigateTo = (path) => () => history.pushState(path, null, path);
+  let active = false;
   
-  $: const isActive = (path) => (window.location.pathname === path);
-
+  const isActive = (path) => {
+    active = (window.location.pathname === path);
+  };
+  
+  const navigateTo = (path) => (
+    () => history.pushState(path, null, path)
+  );
+  
 </script>
 
 
