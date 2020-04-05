@@ -1,8 +1,9 @@
 <script>
   import routes from '../../scripts/routes.js';
   
-  const isActive = (path) => (window.location.pathname === path);
   const navigateTo = (path) => () => history.pushState(path, null, path);
+  
+  $: const isActive = (path) => (window.location.pathname === path);
 
 </script>
 
