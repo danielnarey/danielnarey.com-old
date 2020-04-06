@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 const designSystem = require('@metamodern/design-system');
 const markdown = require('@jackfranklin/rollup-plugin-markdown');
 const rollup = require('rollup');
@@ -35,11 +37,18 @@ const svelteRender = async (input) => {
     plugins,
   });
   
-  const code = await bundle.generate({
-    format: 'es',
+  await bundle.write({
+    format: 'cjs',
+    file: './temp/bundle.js',
   });
   
-  return code;
+  const { head, html, css } = require('./temp/bundle.js').render();
+  
+  fs.writeFileSync('./temp/head.html', head);
+  fs.writeFileSync('./temp/app.html', html);
+  fs.writeFileSync('./temp/app.css', css);
+  
+  console.log('done');
 };
 
 
