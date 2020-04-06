@@ -21,6 +21,7 @@ const plugins = [
   commonjs(),
   markdown(),
   svelte({
+  	generate: 'ssr',
     preprocess: sveltePreprocess({ 
       postcss: {
         parser: sugarss,
@@ -41,12 +42,14 @@ const svelteRender = async (input) => {
     format: 'cjs',
     file: './temp/bundle.js',
   });
-  
-  const { head, html, css } = require('./temp/bundle.js').render();
+
+  const component = require('./temp/bundle.js');
+  console.log(Object.keys(component));
+  const { head, html, css } = component.render();
   
   fs.writeFileSync('./temp/head.html', head);
   fs.writeFileSync('./temp/app.html', html);
-  fs.writeFileSync('./temp/app.css', css);
+  fs.writeFileSync('./temp/app.css', css.code);
   
   console.log('done');
 };
