@@ -28,7 +28,7 @@ const svelteRender = async (input) => {
     plugins,
   });
   
-  const code = await bundle.generate(
+  const code = await bundle.generate({
     format: 'es',
   });
   
