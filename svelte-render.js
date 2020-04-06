@@ -1,10 +1,15 @@
-import designSystem from '@metamodern/design-system';
-import markdown from '@jackfranklin/rollup-plugin-markdown';
-import rollup from 'rollup';
-import sugarss from 'sugarss';
-import svelte from 'rollup-plugin-svelte';
-import sveltePreprocess from 'svelte-preprocess';
-import tailwindcss from 'tailwindcss';
+const designSystem = require('@metamodern/design-system');
+const markdown = require('@jackfranklin/rollup-plugin-markdown');
+const rollup = require('rollup');
+const sugarss = require('sugarss');
+const svelte = require('rollup-plugin-svelte');
+const sveltePreprocess = require('svelte-preprocess');
+const tailwindcss = require('tailwindcss');
+
+
+const designSystemConfig = {
+  rotation: -15,
+};
 
 
 const plugins = [
@@ -36,4 +41,4 @@ const svelteRender = async (input) => {
 };
 
 
-export default svelteRender;
+module.exports = svelteRender;
