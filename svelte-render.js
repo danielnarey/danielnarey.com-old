@@ -1,6 +1,8 @@
 const designSystem = require('@metamodern/design-system');
 const markdown = require('@jackfranklin/rollup-plugin-markdown');
 const rollup = require('rollup');
+const nodeResolve = require('rollup-plugin-node-resolve');
+const commonjs = require('rollup-plugin-commonjs');
 const sugarss = require('sugarss');
 const svelte = require('rollup-plugin-svelte');
 const sveltePreprocess = require('svelte-preprocess');
@@ -28,7 +30,7 @@ const plugins = [
 
 
 const svelteRender = async (input) => {
-  const bundle = await rollup({
+  const bundle = await rollup.rollup({
     input,
     plugins,
   });

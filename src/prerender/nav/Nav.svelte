@@ -1,5 +1,5 @@
 <script>
-  import routes from '../../scripts/routes.js';
+  import routes from '../../routes.js';
   
   let current = window.location.pathname;
   

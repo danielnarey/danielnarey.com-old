@@ -1,7 +1,7 @@
-import About from '../app/main/about/About.svelte';
-import Projects from '../app/main/projects/Projects.svelte';
-import Uses from '../app/main/uses/Uses.svelte';
-import Now from '../app/main/now/Now.svelte';
+import About from './app/about/About.svelte';
+import Projects from './app/projects/Projects.svelte';
+import Uses from './app/uses/Uses.svelte';
+import Now from './app/now/Now.svelte';
 
 
 const routes = [
