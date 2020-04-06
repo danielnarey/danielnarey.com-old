@@ -28,6 +28,7 @@
             id='nav-tab-{i}'
             role='tab'
             aria-controls='main-tabpanel-{i}'
+            aria-selected='{current === path}'
             class:active='{current === path}'
             on:click='{navigate(path)}'
           )= '{label}'
