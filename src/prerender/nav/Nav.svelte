@@ -1,7 +1,12 @@
 <script>
+  import { onMount } from 'svelte';
   import routes from '../../routes.js';
   
-  let current = window.location.pathname;
+  let current;
+  
+  onMount(() => {
+    current = window.location.pathname;
+  });
   
   const navigate = (path) => () => {
     history.pushState(path, null, path);
