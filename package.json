@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/danielnarey/danielnarey.com"
   },
+  "type": "module",
   "scripts": {
     "prebuild": "del dist/*",
     "build": "metamodern-static",
