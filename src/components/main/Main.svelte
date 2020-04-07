@@ -1,5 +1,5 @@
 <script>
-  import About from '../../app/about/About.svelte';
+  import About from './about/About.svelte';
 
 </script>
 
