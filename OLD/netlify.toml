@@ -1,7 +1,7 @@
 [build]
   base    = "/"
-  publish = "__sapper__/export"
-  command = "npm run export"
+  publish = "dist/"
+  command = "npm run build"
 
 [[redirects]]
   from = "/*"
