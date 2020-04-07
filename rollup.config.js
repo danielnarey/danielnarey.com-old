@@ -39,6 +39,7 @@ export default {
         'process.browser': true,
         'process.env.NODE_ENV': JSON.stringify(mode)
       }),
+      markdown(),
       svelte({
         dev,
         hydratable: true,
