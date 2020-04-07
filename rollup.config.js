@@ -53,7 +53,7 @@ export default {
         dev,
         preprocess,
         hydratable: true,
-        emitCss: true,
+        css: (css) => { css.write('./src/static/global.css', false); },
       }),
       resolve({
         browser: true,
@@ -94,6 +94,7 @@ export default {
         'process.browser': false,
         'process.env.NODE_ENV': JSON.stringify(mode)
       }),
+      markdown(),
       svelte({
         generate: 'ssr',
         dev,
