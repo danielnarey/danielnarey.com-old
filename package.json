@@ -7,7 +7,9 @@
     "build": "sapper build --legacy",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build",
-    "test": "echo NO TESTS"
+    "sync": "git pull && git add . && git commit -m 'automated sync' && git push",
+    "test": "echo NO TESTS",
+    "update": "updtr"
   },
   "dependencies": {
     "compression": "^1.7.1",
@@ -37,6 +39,7 @@
     "svelte": "^3.0.0",
     "sugarss": "^2.0.0",
     "svelte-preprocess": "^3.7.1",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.2.0",
+    "updtr": "^3.1.0"
   }
 }

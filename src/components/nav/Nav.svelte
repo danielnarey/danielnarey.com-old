@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import routes from '../../routes.js';
+  import routes from './routes.js';
   
   let current;
   
