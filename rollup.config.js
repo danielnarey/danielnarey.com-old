@@ -53,7 +53,7 @@ export default {
         dev,
         preprocess,
         hydratable: true,
-        css: (css) => { css.write('./src/static/global.css', false); },
+        css: (css) => { css.write('./__sapper__/export/global.css', false); },
       }),
       resolve({
         browser: true,
