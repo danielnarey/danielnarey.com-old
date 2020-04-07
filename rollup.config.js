@@ -30,6 +30,15 @@ const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
 const onwarn = (warning, onwarn) => (warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) || onwarn(warning);
 
+
+const preprocess = sveltePreprocess({ 
+  postcss: {
+    parser: sugarss,
+    plugins: [tailwindcss(designSystem(designSystemConfig))],
+  },
+});
+
+
 export default {
   client: {
     input: config.client.input(),
@@ -42,14 +51,9 @@ export default {
       markdown(),
       svelte({
         dev,
+        preprocess,
         hydratable: true,
         emitCss: true,
-        preprocess: sveltePreprocess({ 
-          postcss: {
-            parser: sugarss,
-            plugins: [tailwindcss(designSystem(designSystemConfig))],
-          },
-        }),
       }),
       resolve({
         browser: true,
@@ -92,7 +96,8 @@ export default {
       }),
       svelte({
         generate: 'ssr',
-        dev
+        dev,
+        preprocess,
       }),
       resolve({
         dedupe: ['svelte']
