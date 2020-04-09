@@ -1,5 +1,5 @@
 <style lang="postcss" global>
-  @tailwind base 
+  @tailwind base
 
   html
     @apply antialiased

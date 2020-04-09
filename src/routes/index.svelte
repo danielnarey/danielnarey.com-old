@@ -1,8 +1,4 @@
 <script>
-  import 'typeset-barlow';
-  import 'typeset-barlow-semi-condensed';
-  import 'typeset-source-code-pro';
-
   import '../styles/base.svelte';
   import '../styles/container.svelte';
   import '../styles/sidebar.svelte';
@@ -32,6 +28,10 @@
 
 
 <style lang="postcss">
+  @import 'typeface-barlow'
+  @import 'typeface-barlow-semi-condensed'
+  @import 'typeface-source-code-pro'
+  
   div.app
     @apply bg-near-white
     @apply text-darker font-barlow font-regular text-sm leading-sm
