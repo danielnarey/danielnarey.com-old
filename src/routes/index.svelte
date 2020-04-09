@@ -1,4 +1,8 @@
 <script>
+  import 'typeset-barlow';
+  import 'typeset-barlow-semi-condensed';
+  import 'typeset-source-code-pro';
+
   import '../styles/base.svelte';
   import '../styles/container.svelte';
   import '../styles/sidebar.svelte';
