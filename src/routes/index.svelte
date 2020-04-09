@@ -1,4 +1,10 @@
 <script>
+  import '../styles/base.svelte';
+  import '../styles/container.svelte';
+  import '../styles/sidebar.svelte';
+  import '../styles/typeset.svelte';
+  import '../styles/circuit-board.svelte';
+
   import Header from '../components/header/Header.svelte';
   import Nav from '../components/nav/Nav.svelte';
   import Main from '../components/main/Main.svelte';

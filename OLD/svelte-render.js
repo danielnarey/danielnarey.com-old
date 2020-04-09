@@ -38,7 +38,7 @@ const svelteRender = async (input) => {
     plugins,
   });
   
-  await bundle.write({
+  await bundle.write({  
     format: 'cjs',
     file: './temp/bundle.js',
   });
