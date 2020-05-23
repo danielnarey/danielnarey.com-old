@@ -1,9 +1,9 @@
 {
   "name": "danielnarey.com",
   "version": "0.0.0",
-  "description": "Professional website",
+  "description": "Personal website",
   "author": "Daniel C. Narey",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "https://github.com/danielnarey/danielnarey.com"
