@@ -1,47 +1,50 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "danielnarey.com",
   "version": "0.0.0",
+  "description": "Professional website",
+  "author": "Daniel C. Narey",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielnarey/danielnarey.com"
+  },
   "scripts": {
-    "dev": "sapper dev",
-    "build": "sapper build --legacy",
-    "export": "sapper export --legacy",
-    "start": "node __sapper__/build",
+    "prebuild": "del dist/*",
+    "build:dev": "svelte-render --development",
+    "build:prod": "svelte-render",
+    "merge:dev": "git checkout master && git pull && git merge dev -s recursive -Xtheirs",
+    "lint": "eslint --fix src/scripts",
     "sync": "git pull && git add . && git commit -m 'automated sync' && git push",
-    "test": "echo NO TESTS",
+    "test": "ava",
     "update": "updtr"
   },
   "dependencies": {
-    "compression": "^1.7.1",
-    "navaid": "^1.1.0",
-    "polka": "next",
-    "sirv": "^0.4.0",
+    "@metamodern/design-system": "^1.1.1",
+    "@metamodern/svelte-render": "^1.0.0",
+    "sugarss": "^2.0.0",
+    "svelte-preprocess": "^3.7.1",
+    "tailwindcss": "^1.2.0",
     "typeface-barlow": "0.0.71",
     "typeface-barlow-semi-condensed": "0.0.71",
     "typeface-source-code-pro": "^1.1.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/plugin-transform-runtime": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/runtime": "^7.0.0",
-    "@jackfranklin/rollup-plugin-markdown": "^0.2.0",
-    "@metamodern/design-system": "^1.1.1",
-    "@rollup/plugin-commonjs": "^11.0.0",
-    "@rollup/plugin-node-resolve": "^7.0.0",
-    "@rollup/plugin-replace": "^2.2.0",
-    "postcss": "^7.0.27",
-    "pug": "^2.0.4",
-    "rollup": "^1.20.0",
-    "rollup-plugin-babel": "^4.0.2",
-    "rollup-plugin-svelte": "^5.0.1",
-    "rollup-plugin-terser": "^4.0.4",
-    "sapper": "^0.27.0",
-    "sugarss": "^2.0.0",
-    "svelte": "^3.0.0",
-    "svelte-preprocess": "^3.7.1",
-    "tailwindcss": "^1.2.0",
+    "ava": "^2.4.0",
+    "del-cli": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-ava": "^10.2.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-types": "^1.0.2",
+    "np": "^5.2.1",
     "updtr": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "ava": {
+    "nodeArguments": [
+      "--experimental-modules"
+    ]
   }
 }

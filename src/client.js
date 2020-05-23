@@ -1,5 +1,11 @@
-import * as sapper from '@sapper/app';
+import Index from './index.svelte';
 
-sapper.start({
-  target: document.querySelector('#sapper')
-});
+
+try {
+  const client = new Index({
+    target: document.body,
+    hydrate: true,
+  });
+} catch (err) {
+  console.error(err);
+}
