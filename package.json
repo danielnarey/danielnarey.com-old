@@ -10,24 +10,16 @@
   },
   "type": "module",
   "scripts": {
-    "prebuild": "del dist/*",
-    "build:dev": "svelte-render --development",
-    "build:prod": "svelte-render",
-    "merge:dev": "git checkout master && git pull && git merge dev -s recursive -Xtheirs",
-    "lint": "eslint --fix src/scripts",
+    "build": "del dist/* && svelte-render",
+    "build:dev": "del dist/* && svelte-render --development",
+    "merge:next": "git checkout master && git pull && git merge next -s recursive -Xtheirs",
     "sync": "git pull && git add . && git commit -m 'automated sync' && git push",
-    "test": "ava",
+    "test": "build",
     "update": "updtr"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.9.6",
     "@jackfranklin/rollup-plugin-markdown": "^0.2.0",
     "@metamodern/design-system": "^1.1.1",
-    "@metamodern/svelte-render": "^1.0.0",
-    "core-js": "^3.6.5",
-    "pug": "^2.0.4",
-    "sugarss": "^2.0.0",
-    "svelte": "^3.22.3",
     "svelte-preprocess": "^3.7.1",
     "tailwindcss": "^1.2.0",
     "typeface-barlow": "0.0.71",
@@ -35,22 +27,16 @@
     "typeface-source-code-pro": "^1.1.3"
   },
   "devDependencies": {
-    "ava": "^2.4.0",
+    "@babel/preset-env": "^7.9.6",
+    "@metamodern/svelte-render": "^1.0.0",
+    "core-js": "^3.6.5",
     "del-cli": "^3.0.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-ava": "^10.2.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-types": "^1.0.2",
-    "np": "^5.2.1",
+    "pug": "^2.0.4",
+    "sugarss": "^2.0.0",
+    "svelte": "^3.22.3",
     "updtr": "^3.1.0"
   },
   "engines": {
     "node": ">=12"
-  },
-  "ava": {
-    "nodeArguments": [
-      "--experimental-modules"
-    ]
   }
 }
