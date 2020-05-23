@@ -15,7 +15,7 @@ const config = {
       ],
     },
   }),
-  rollupPlugins: [
+  rollupInputPlugins: [
     markdown(),
   ],
 };

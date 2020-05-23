@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/danielnarey/danielnarey.com"
   },
+  "type": "module",
   "scripts": {
     "prebuild": "del dist/*",
     "build:dev": "svelte-render --development",
@@ -19,9 +20,14 @@
     "update": "updtr"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.9.6",
+    "@jackfranklin/rollup-plugin-markdown": "^0.2.0",
     "@metamodern/design-system": "^1.1.1",
     "@metamodern/svelte-render": "^1.0.0",
+    "core-js": "^3.6.5",
+    "pug": "^2.0.4",
     "sugarss": "^2.0.0",
+    "svelte": "^3.22.3",
     "svelte-preprocess": "^3.7.1",
     "tailwindcss": "^1.2.0",
     "typeface-barlow": "0.0.71",
