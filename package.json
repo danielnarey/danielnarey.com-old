@@ -30,7 +30,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
-    "@metamodern/svelte-render": "^1.0.1",
+    "@metamodern/svelte-render": "^1.0.2",
     "core-js": "^3.6.5",
     "del-cli": "^3.0.0",
     "pug": "^2.0.4",
