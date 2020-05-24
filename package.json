@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@jackfranklin/rollup-plugin-markdown": "^0.2.0",
+    "@metamodern/copy-typefaces": "^1.0.0",
     "@metamodern/design-system": "^1.1.1",
     "svelte-preprocess": "^3.7.1",
     "tailwindcss": "^1.2.0",
