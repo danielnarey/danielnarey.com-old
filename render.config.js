@@ -20,7 +20,7 @@ const config = {
   rollupInputPlugins: [
     markdown(),
   ],
-  onRender: () => copyTypefaces(process.cwd()),
+  onRender: (context, options) => copyTypefaces(context, options),
 };
 
 
