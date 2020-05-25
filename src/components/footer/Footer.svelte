@@ -1,11 +1,5 @@
 <script>
-  import markdown from '../../helpers/markdown.js';
-  
-  const content = markdown(`
-    Built with Svelte and [Metamodern Design's](https://github.com/metamodern-design) open-source stack
-    
-    ©2020 Daniel C. Narey
-  `);
+  import content from './content.md';
   
 </script>
 
@@ -14,7 +8,7 @@
   footer.circuit-board
     .container
       section
-        != '{@html content}'
+        != '{@html content.html}'
 
 </template>
 
