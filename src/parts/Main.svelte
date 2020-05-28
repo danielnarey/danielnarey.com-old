@@ -36,7 +36,7 @@
         role='tabpanel'
         aria-labelledby='nav-tab-{currentRoute.id}'
       )
-        h1= '{currentRoute.heading}'
+        h1= '{currentRoute.label}'
         svelte:component(this='{currentRoute.component}')
     
 </template>
