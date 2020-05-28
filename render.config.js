@@ -1,5 +1,5 @@
 import sveltePreprocess from 'svelte-preprocess';
-import markdown from '@jackfranklin/rollup-plugin-markdown';
+import markdownPlugin from '@mheedev/rollup-plugin-markdown';
 import sugarss from 'sugarss';
 import postcssEasyImport from 'postcss-easy-import';
 import tailwindcss from 'tailwindcss';
@@ -18,7 +18,7 @@ const config = {
     },
   }),
   rollupInputPlugins: [
-    markdown(),
+    markdownPlugin(),
   ],
   onRender: (context, options) => copyTypefaces(context, options),
 };
