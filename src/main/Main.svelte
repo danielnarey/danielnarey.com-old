@@ -9,16 +9,14 @@
   
   
   let Route = About;
-
-  onMount(() => {
-    const router = Navaid()
-      .on('/', () => { Route = About })
-      .on('/projects', () => { Route = Projects })
-      .on('/uses', () => { Route = Uses })
-      .on('/now', () => { Route = Now })
-      .listen();
-  });
   
+  const router = Navaid()
+    .on('/', () => { Route = About })
+    .on('/projects', () => { Route = Projects })
+    .on('/uses', () => { Route = Uses })
+    .on('/now', () => { Route = Now })
+
+  onMount(router.listen);
   onDestroy(router.unlisten);
   
 </script>
