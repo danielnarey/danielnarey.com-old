@@ -9,15 +9,22 @@
   
   
   let Route = About;
-  
-  const router = Navaid()
-    .on('/', () => { Route = About })
-    .on('/projects', () => { Route = Projects })
-    .on('/uses', () => { Route = Uses })
-    .on('/now', () => { Route = Now })
+  let router;
 
-  onMount(router.listen);
-  onDestroy(router.unlisten);
+  onMount(() => {
+    router = Navaid('/')
+      .on('/', () => { Route = About })
+      .on('/projects', () => { Route = Projects })
+      .on('/uses', () => { Route = Uses })
+      .on('/now', () => { Route = Now })
+      .listen();
+  });
+
+  onDestroy(() => {
+    if (router) {
+      router.unlisten();
+    }
+  });
   
 </script>
 
