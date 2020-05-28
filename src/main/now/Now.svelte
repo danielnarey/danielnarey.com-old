@@ -1,5 +1,5 @@
 <script>
-  import Tabpanel from '../../components/Tabpanel.svelte';
+  import Tabpanel from '../Tabpanel.svelte';
   import header from './header.md';
   import content from './content.md';
   import footer from './footer.md';
@@ -9,8 +9,8 @@
 
 <template lang="pug">
   Tabpanel(
-    id='2'
-    heading='Uses'
+    id='3'
+    heading='Now'
   )
     section.header
         != '{@html header.html}'

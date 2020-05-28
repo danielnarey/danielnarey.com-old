@@ -1,5 +1,5 @@
 <script>
-  import Tabpanel from '../../components/Tabpanel.svelte';
+  import Tabpanel from '../Tabpanel.svelte';
   import hello from './hello.md';
   import header from './header.md';
   import content from './content.md';
