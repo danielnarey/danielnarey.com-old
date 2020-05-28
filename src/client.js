@@ -1,10 +1,10 @@
 /* global document */
 
-import Index from './index.svelte';
+import App from './App.svelte';
 
 
 try {
-  const client = new Index({
+  const client = new App({
     target: document.body,
     hydrate: true,
   });

@@ -1,5 +1,5 @@
 <script>
-  import content from './content.md';
+  import content from './footer-content.md';
   
 </script>
 
@@ -20,7 +20,7 @@
     @apply bg-darker-blue
     @apply text-white text-sm leading-sm
   
-  p
+  section
     @apply text-center
 
 

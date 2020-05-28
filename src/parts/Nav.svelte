@@ -1,11 +1,11 @@
 <script>
   import { onMount } from 'svelte';
-  import routes from './routes.js';
+  import routes from '../routes/index.js';
   
-  let current;
+  let currentPath;
   
   onMount(() => {
-    current = window.location.pathname;
+    currentPath = window.location.pathname;
   });
   
   const navigate = (path) => () => {
@@ -15,9 +15,9 @@
       document.querySelector('main').scrollIntoView(true);
     }
 
-    current = path;
+    currentPath = path;
   };
-  
+
 </script>
 
 
@@ -33,8 +33,8 @@
             id='nav-tab-{i}'
             role='tab'
             aria-controls='main-tabpanel-{i}'
-            aria-selected='{current === path}'
-            class:active='{current === path}'
+            aria-selected='{currentPath === path}'
+            class:active='{currentPath === path}'
             on:click='{navigate(path)}'
           )= '{label}'
 
