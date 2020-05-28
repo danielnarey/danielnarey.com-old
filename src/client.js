@@ -9,9 +9,8 @@ import Uses from './routes/uses/Uses.svelte';
 import Now from './routes/now/Now.svelte';
 
 
-const startRouter = (targetId, routes) => {
+const startRouter = (target, routes) => {
   const router = navaid();
-  const target = document.getElementById(targetId);
 
   routes.forEach(([ path, Component ]) => {
     router.on(path, () => {
@@ -19,7 +18,7 @@ const startRouter = (targetId, routes) => {
         node.parentNode.removeChild(node);
       });
 
-      return new Component({ target });
+      return new Component({ target, hydrate: true });
     });
   });
   
