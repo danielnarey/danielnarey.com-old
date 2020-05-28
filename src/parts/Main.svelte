@@ -30,7 +30,7 @@
 
 <template lang="pug">        
   main
-    .container#pageContent
+    div.container#pageContent
       div.typeset(
         id='main-tabpanel-{currentRoute.id}'
         role='tabpanel'
@@ -47,7 +47,7 @@
     @apply w-screen min-h-screen
     @apply py-2b
   
-  div
+  div.typeset
     @apply px-1b
 
       
