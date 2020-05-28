@@ -1,36 +1,39 @@
 <script>
   import Tabpanel from '../../components/Tabpanel.svelte';
-  import hello from './hello.md';
   import header from './header.md';
   import content from './content.md';
+  import footer from './footer.md';
 
 </script>
 
 
 <template lang="pug">
   Tabpanel(
-    id='0'
-    heading='About'
+    id='2'
+    heading='Uses'
   )
-    section
-      div.hello
-        != '{@html hello.html}'
-      
-      div.header
+    section.header
         != '{@html header.html}'
   
+    section.content
+        != '{@html content.html}'
+    
     section
-      != '{@html content.html}'
+      != '{@html footer.html}'
 
 </template>
 
 
 <style lang="postcss">
-  div.hello
-    @apply mb-1b
-    @apply text-xl leading-xl-narrow
-  
-  div.header
+  section.header
     @apply text-lg leading-lg-narrow
+  
+  section.content
+    @apply leading-sm-narrow
+  
+
+  @screen c17
+    section.content
+      @apply leading-base-narrow
 
 </style>

@@ -1,6 +1,5 @@
 <script>
   import Tabpanel from '../../components/Tabpanel.svelte';
-  import hello from './hello.md';
   import header from './header.md';
   import content from './content.md';
 
@@ -9,15 +8,11 @@
 
 <template lang="pug">
   Tabpanel(
-    id='0'
-    heading='About'
+    id='1'
+    heading='Projects'
   )
-    section
-      div.hello
-        != '{@html hello.html}'
-      
-      div.header
-        != '{@html header.html}'
+    section.header
+      != '{@html header.html}'
   
     section
       != '{@html content.html}'
@@ -26,11 +21,7 @@
 
 
 <style lang="postcss">
-  div.hello
-    @apply mb-1b
-    @apply text-xl leading-xl-narrow
-  
-  div.header
+  section.header
     @apply text-lg leading-lg-narrow
 
 </style>
