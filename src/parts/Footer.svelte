@@ -1,14 +1,11 @@
-<script>
-  import content from './footer-content.md';
-  
-</script>
-
-
 <template lang="pug">
   footer.circuit-board
     .container
       section
-        != '{@html content.html}'
+        :markdown
+          Built with Svelte and [Metamodern Design's](https://github.com/metamodern-design) open-source stack
+
+          ©2020 Daniel C. Narey
 
 </template>
 
