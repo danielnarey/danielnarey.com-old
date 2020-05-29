@@ -20,7 +20,7 @@
   "dependencies": {
     "@metamodern/copy-typefaces": "^1.0.0",
     "@metamodern/design-system": "^1.1.1",
-    "@mheedev/rollup-plugin-markdown": "^0.0.4",
+    "markdown-it": "^11.0.0",
     "navaid": "^1.1.1",
     "postcss-easy-import": "^3.0.0",
     "sugarss": "^2.0.0",
