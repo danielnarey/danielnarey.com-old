@@ -11,7 +11,7 @@ const markdown = (content, {
   linkify = true,
   typographer = true,
   inline = false,
-  ...options,
+  ...options
 }) => {
   const md = markdownIt({ linkify, typographer, ...options });
   const html = inline ? md.renderInline(content) : md.render(content);

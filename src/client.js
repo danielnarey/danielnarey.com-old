@@ -1,6 +1,6 @@
 /* global document */
 
-import App from './App.svelte';
+import App from './index.svelte';
 
 
 try {

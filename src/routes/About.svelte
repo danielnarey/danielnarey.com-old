@@ -1,4 +1,4 @@
-<template lang="markdown">
+<template lang="pug">
   section
     :markdown(class='hello')
       Hi, I'm Daniel. ![Waving hand emoji](/media/1F44B.svg)
