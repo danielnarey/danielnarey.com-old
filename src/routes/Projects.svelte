@@ -1,0 +1,35 @@
+<template lang="pug">
+  section.header
+    p What I'm building on my own time.
+
+  section
+    :markdown
+      ## Design & Color System
+
+      Writing clean and maintainable CSS is still one of the most vexing parts of front-end development. A decade ago, CSS frameworks like [Bootstrap](https://getbootstrap.com/) were a big step forward in helping developers create cleaner user interfaces with more reusable components. On the down side, anyone who has tried to customize out-of-the box themes and components knows how frustrating it can be to fight with a framework when trying to override inherited styles and behaviors. As creating a unique visual style becomes even more of a marketing imperative for brands and digital products, new design solutions are required.
+      
+      One up-and-coming solution to the customization and maintainability problem is [TailwindCSS](https://tailwindcss.com/) — a "utility-first" framework that is designed on the principle of [composition over inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance). In brief,
+      
+      > Instead of opinionated predesigned components, Tailwind provides low-level utility classes that let you build completely custom designs without ever leaving your HTML. If you're sick of fighting the framework, overriding unwanted styles, and battling specificity wars, Tailwind was made for you.
+      
+      Importantly, Tailwind is made to be customized. Using JavaScript for configuration, you can start with Tailwind's intelligent defaults and adjust them to generate whatever set of utility classes makes sense for your project. 
+      
+      To support my web development work, I have been using Tailwind to gradually implement a full-fledged design system. Currently, this system includes size and layout classes based on [proportional relationships](https://programmingdesignsystems.com/layout/a-short-history-of-geometric-composition/index.html) and color classes based on the [HSL model](https://en.wikipedia.org/wiki/HSL_and_HSV) and the [12-hue color circle](https://personal.utdallas.edu/~melacy/pages/2D_Design/Itten_ColorContrasts/IttenColorContrasts.html). My next step is to create visual documentation for this set of custom utility classes. Finally, I plan to create some prototypes for visual styles and basic UI components that can be reused across projects.
+      
+      
+      ## Static Site Generator/Bundler
+      
+      A static site generator is a program (typically a command-line utility) that is executed in a development or staging environment to compile source code and data files into HTML files and other assets. Those files can then be hosted with a bare-bones [HTTP server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server). Using a static site generator enables developers to make use of modern UI frameworks and templating languages, while helping to keep source code maintainable and versionable. 
+      
+      Sometimes, "static" is thought to mean that the site is HTML-only or not fully interactive. On the contrary, many static sites use client-side JavaScript for page navigation and user interactions, as well as to fetch and process data from REST or GraphQL APIs. "Static" refers only to the way web content is stored and accessed on the server. Because static web hosting services like [Netlify](https://www.netlify.com/) and [Zeit Now](https://zeit.co/home) offer unmatched performance and security at [freemium](https://en.wikipedia.org/wiki/Freemium) rates, many developers are migrating existing sites or starting new projects using these services.
+      
+      There are many static site generators out there, but I decided to create my own so that I would have a simple utility I could run as a build script with out-of-the-box support for the tools I was already using – [Rollup](http://rollupjs.org/guide/en/) for bundling ES6 modules, [PostCSS](https://postcss.org/) for processing style rules, and [Pug](https://pugjs.org/api/getting-started.html) for rendering templated markup. My goals were to eliminate boilerplate and to allow for progressive configuration starting from intelligent defaults. The current pre-release version is well tested, and it is in use as the build script on several of my sites. Although documentation is still forthcoming, the package can be installed from npm as [@metamodern/static](https://www.npmjs.com/package/@metamodern/static). Once I complete the documentation and finalize configuration options, I will be ready to release v1.0.0. I'm currently working on a few [site templates](https://github.com/metamodern-design) with different layouts and navigation styles that use @metamodern/static as the build system.
+
+</template>
+
+
+<style lang="postcss">
+  section.header
+    @apply text-lg leading-lg-narrow
+
+</style>

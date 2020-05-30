@@ -16,10 +16,11 @@ const markdown = (content, {
   const md = markdownIt({ linkify, typographer, ...options });
   const html = inline ? md.renderInline(content) : md.render(content);
   
-  if (options.tag || options.class) {
+  if (options.tag || options.class || options.attrs) {
     const tag = options.tag || 'div';
     const classAttr = options.class ? ` class="${options.class}"` : '';
-    return `<${tag}${classAttr}>${html}</${tag}>`
+    const otherAttrs = options.attrs ? ` ${options.attrs}` : '';
+    return `<${tag}${classAttr}${otherAttrs}>${html}</${tag}>`
   }
   
   return html;

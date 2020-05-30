@@ -1,11 +1,10 @@
 <template lang="pug">
   footer.circuit-board
     .container
-      section
-        :markdown
-          Built with Svelte and [Metamodern Design's](https://github.com/metamodern-design) open-source stack
+      :markdown(tag='section')
+        Built with Svelte and [Metamodern Design's](https://github.com/metamodern-design) open-source stack
 
-          ©2020 Daniel C. Narey
+        ©2020 Daniel C. Narey
 
 </template>
 

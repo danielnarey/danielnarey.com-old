@@ -1,9 +1,5 @@
 <script>
-  import './styles/base.svelte';
-  import './styles/container.svelte';
-  import './styles/sidebar.svelte';
-  import './styles/typeset.svelte';
-  import './styles/circuit-board.svelte';
+  import './styles/index.js';
 
   import Header from './parts/Header.svelte';
   import Nav from './parts/Nav.svelte';
@@ -14,8 +10,8 @@
 
 
 <template lang="pug">
-  div.app
-    div.sidebar
+  .app
+    .sidebar
       Header
       
       Nav
@@ -32,22 +28,22 @@
   @import 'typeface-barlow-semi-condensed'
   @import 'typeface-source-code-pro'
   
-  div.app
+  .app
     @apply bg-near-white
     @apply text-darker font-barlow font-regular text-sm leading-sm
   
-  div.sidebar
+  .sidebar
     @apply border-darker-blue
     @apply bg-darker-blue
 
 
   @screen c11
-    div.sidebar
+    .sidebar
       @apply border-r
 
     
   @screen c17
-    div.app
+    .app
       @apply text-base leading-base
 
 </style>

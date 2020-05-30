@@ -30,8 +30,8 @@
 
 <template lang="pug">        
   main
-    div.container#pageContent
-      div.typeset(
+    .container#pageContent
+      .typeset(
         id='main-tabpanel-{currentRoute.id}'
         role='tabpanel'
         aria-labelledby='nav-tab-{currentRoute.id}'
@@ -47,7 +47,7 @@
     @apply w-screen min-h-screen
     @apply py-2b
   
-  div.typeset
+  .typeset
     @apply px-1b
 
       

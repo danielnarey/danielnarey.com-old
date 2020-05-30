@@ -2,7 +2,7 @@
   header
     div
       img(
-        src='media/portrait.png'
+        src='portrait.png'
         alt='Cartoon drawing of Daniel Narey'
       )
     
