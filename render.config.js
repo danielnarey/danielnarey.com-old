@@ -4,6 +4,8 @@ import sugarss from 'sugarss';
 import postcssEasyImport from 'postcss-easy-import';
 import tailwindcss from 'tailwindcss';
 import designSystem from '@metamodern/design-system';
+import presetEnv from 'postcss-preset-env';
+import cssnano from 'cssnano';
 import copyTypefaces from '@metamodern/copy-typefaces';
 
 
@@ -36,6 +38,10 @@ const config = {
       plugins: [
         postcssEasyImport({ extensions: ['.css', '.sss'] }),
         tailwindcss(designSystem({ rotation: -15 })),
+        presetEnv({
+          browsers: '> 1.5% in US, Firefox ESR, not ie <= 11, not dead',
+        }),
+        cssnano({ preset: 'default' }),
       ],
     },
   }),

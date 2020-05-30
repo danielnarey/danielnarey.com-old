@@ -1,5 +1,4 @@
 <script>
-  import './styles/index.js';
   import Header from './parts/Header.svelte';
   import Nav from './parts/Nav.svelte';
   import Main from './parts/Main.svelte';
@@ -22,7 +21,9 @@
 </template>
 
 
-<style lang="postcss">  
+<style lang="postcss">
+  @import './styles/base.sss'
+
   .app
     @apply bg-near-white
     @apply text-darker font-barlow font-regular text-sm leading-sm
