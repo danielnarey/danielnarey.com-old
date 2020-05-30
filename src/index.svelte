@@ -1,4 +1,5 @@
 <script>
+  import './styles/index.js';
   import Header from './parts/Header.svelte';
   import Nav from './parts/Nav.svelte';
   import Main from './parts/Main.svelte';
@@ -22,7 +23,9 @@
 
 
 <style lang="postcss">
-  @import './styles/base.sss'
+  @import 'typeface-barlow'
+  @import 'typeface-barlow-semi-condensed'
+  @import 'typeface-source-code-pro'
 
   .app
     @apply bg-near-white
