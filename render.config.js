@@ -17,9 +17,9 @@ const config = {
     postcss: {
       parser: sugarss,
       plugins: [
-        postcssEasyImport({ extensions: ['.css', '.sss'] }),
+        postcssEasyImport(),
         tailwindcss(designSystem({ rotation: -15 })),
-        presetEnv({
+        postcssPresetEnv({
           browsers: '> 1.5% in US, Firefox ESR, not ie <= 11, not dead',
         }),
         cssnano({ preset: 'default' }),
