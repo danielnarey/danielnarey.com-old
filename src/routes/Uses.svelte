@@ -3,7 +3,7 @@
     p What technologies I use and why.
 
   section.content
-    :markdown
+    :md
       ## Developer Setup
 
       Last year, I replaced my old MacBook with an iPad Pro, and I am now able to use it for 99% of what I do as a developer. Keeping my local changes synced with cloud repositories has improved my workflow, and the iPad's Liquid Retina / True Tone display is saving my eyesight. Here's my setup:
@@ -61,7 +61,7 @@
       - __Photo editing:__ [Affinity Photo](https://affinity.serif.com/en-us/photo/ipad/)
 
   section
-    :markdown
+    :md
       *Check out "uses" pages from a bunch of other developers [here](https://uses.tech/).*
 
 </template>

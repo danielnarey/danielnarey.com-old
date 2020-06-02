@@ -3,7 +3,7 @@
     p What I'm building on my own time.
 
   section
-    :markdown
+    :md
       ## Design & Color System
 
       Writing clean and maintainable CSS is still one of the most vexing parts of front-end development. A decade ago, CSS frameworks like [Bootstrap](https://getbootstrap.com/) were a big step forward in helping developers create cleaner user interfaces with more reusable components. On the down side, anyone who has tried to customize out-of-the box themes and components knows how frustrating it can be to fight with a framework when trying to override inherited styles and behaviors. As creating a unique visual style becomes even more of a marketing imperative for brands and digital products, new design solutions are required.

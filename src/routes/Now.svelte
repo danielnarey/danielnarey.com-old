@@ -3,7 +3,7 @@
     p What I'm attuned to at the moment.
 
   section.content
-    :markdown
+    :md
       *1/25/20*
 
       ### Family
@@ -35,7 +35,7 @@
       Blown away by the thoughtful adaptation and high production quality Amazon's limited series [Philip K. Dick's Electric Dreams](https://www.amazon.com/Philip-K-Dicks-Electric-Dreams/dp/B075NTXMN9).
 
   section
-    :markdown
+    :md
       *Why a "now" page? Read more about the concept [here](https://nownownow.com/about).*
 
 </template>
