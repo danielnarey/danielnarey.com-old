@@ -14,7 +14,7 @@ const browsers = '> 1.5% in US, Firefox ESR, not ie <= 11, not dead';
 
 const config = ({
   development = false,
-} = {}) => {
+} = {}) => ({
   browsers,
   sveltePreprocess: sveltePreprocess({
     pug: {
@@ -31,7 +31,7 @@ const config = ({
     },
   }),
   onRender: (context, options) => copyTypefaces(context, options),
-};
+});
 
 
 export default config;
