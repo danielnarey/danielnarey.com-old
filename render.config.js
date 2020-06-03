@@ -9,21 +9,25 @@ import cssnano from 'cssnano';
 import copyTypefaces from '@metamodern/copy-typefaces';
 
 
-const config = {
+const browsers = '> 1.5% in US, Firefox ESR, not ie <= 11, not dead';
+
+
+const config = ({
+  development = false,
+} = {}) => {
+  browsers,
   sveltePreprocess: sveltePreprocess({
     pug: {
       filters: { md: pugFilterMarkdown },
     },
     postcss: {
       parser: sugarss,
-      plugins: [
+      plugins: [].concat(
         postcssEasyImport(),
         tailwindcss(designSystem({ rotation: -15 })),
-        postcssPresetEnv({
-          browsers: '> 1.5% in US, Firefox ESR, not ie <= 11, not dead',
-        }),
-        cssnano({ preset: 'default' }),
-      ],
+        development ? [] : postcssPresetEnv({ browsers }),
+        development ? [] : cssnano({ preset: 'default' }),
+      ),
     },
   }),
   onRender: (context, options) => copyTypefaces(context, options),
