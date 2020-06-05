@@ -24,7 +24,7 @@ const config = ({
       parser: sugarss,
       plugins: [].concat(
         postcssEasyImport(),
-        tailwindcss(designSystem({ rotation: -15 })),
+        tailwindcss(designSystem({ hueRotation: -15 })),
         development ? [] : postcssPresetEnv({ browsers }),
         development ? [] : cssnano({ preset: 'default' }),
       ),

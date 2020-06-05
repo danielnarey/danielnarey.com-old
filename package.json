@@ -19,8 +19,8 @@
     "update": "updtr"
   },
   "dependencies": {
-    "@metamodern/copy-typefaces": "^2.0.0",
-    "@metamodern/design-system": "^1.1.1",
+    "@metamodern/copy-typefaces": "^2.0.3",
+    "@metamodern/design-system": "^2.0.0",
     "@metamodern/pug-filter-markdown": "^1.0.0",
     "cssnano": "^4.1.10",
     "navaid": "^1.1.1",
@@ -39,7 +39,7 @@
     "@metamodern/svelte-render": "^2.0.0",
     "core-js": "^3.6.5",
     "del-cli": "^3.0.0",
-    "postcss": "^7.0.31",
+    "postcss": "^7.0.32",
     "pug": "^3.0.0",
     "sirv-cli": "^0.4.6",
     "svelte": "^3.23.0",
