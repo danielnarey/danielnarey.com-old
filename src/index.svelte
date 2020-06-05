@@ -29,7 +29,7 @@
 
   .app
     @apply bg-near-white
-    @apply text-darker font-barlow font-regular text-sm leading-sm
+    @apply text-darker font-barlow font-regular text-sm
   
   .sidebar
     @apply border-darker-blue
@@ -43,6 +43,6 @@
     
   @screen c17
     .app
-      @apply text-base leading-base
+      @apply text-base
 
 </style>
