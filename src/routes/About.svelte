@@ -28,9 +28,9 @@
 <style lang="postcss">
   .hello
     @apply mb-1b
-    @apply text-xl leading-xl-narrow
+    @apply text-xl-narrow
   
   .header
-    @apply text-lg leading-lg-narrow
+    @apply text-lg-narrow
 
 </style>

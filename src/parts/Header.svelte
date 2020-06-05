@@ -34,7 +34,7 @@
   
   p.desc
     @apply font-barlow-semi-condensed
-    @apply leading-sm-narrow
+    @apply text-sm-narrow
 
 
   @screen c11
@@ -48,7 +48,7 @@
       @apply pt-3b
 
     p.desc
-      @apply leading-base-narrow
+      @apply text-base-narrow
 
 
 </style>

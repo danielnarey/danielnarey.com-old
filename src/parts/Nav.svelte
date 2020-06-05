@@ -54,7 +54,7 @@
     @apply w-full
     @apply px-2b
     @apply border-bright-red
-    @apply font-bold text-xs leading-base tracking-wide uppercase text-left
+    @apply font-bold text-xs leading-xl tracking-wide uppercase text-left
           
   li:not(:last-child) > button
     @apply border-b
@@ -78,6 +78,6 @@
       @apply border-l border-r rounded
     
     li > button
-      @apply text-sm leading-base-wide
+      @apply text-sm leading-2xl
 
 </style>

@@ -43,14 +43,14 @@
 
 <style lang="postcss">
   section.header
-    @apply text-lg leading-lg-narrow
+    @apply text-lg-narrow
   
   section.content
-    @apply leading-sm-narrow
+    @apply text-sm-narrow
   
 
   @screen c17
     section.content
-      @apply leading-base-narrow
+      @apply text-base-narrow
 
 </style>

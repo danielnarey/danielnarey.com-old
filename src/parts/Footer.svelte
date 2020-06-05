@@ -14,7 +14,7 @@
     @apply w-screen min-h-7c
     @apply pt-2b
     @apply bg-darker-blue
-    @apply text-white text-sm leading-sm
+    @apply text-white text-sm
   
   section
     @apply text-center

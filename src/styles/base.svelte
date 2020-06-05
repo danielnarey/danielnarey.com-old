@@ -52,38 +52,32 @@
   
   h1:not(.unstyled)
     @apply font-extrabold
-    @apply text-lg
-    @apply leading-lg-narrow
+    @apply text-lg-narrow
   
   h2:not(.unstyled)
     @apply font-bold
-    @apply text-base
-    @apply leading-base-narrow
+    @apply text-base-narrow
   
   h3:not(.unstyled),
   h4:not(.unstyled),
   h5:not(.unstyled),
   h6:not(.unstyled)
     @apply font-semibold
-    @apply text-sm
-    @apply leading-sm-narrow
+    @apply text-sm-narrow
   
   
   @screen c17
     h1:not(.unstyled)
-      @apply text-xl
-      @apply leading-xl-narrow
+      @apply text-xl-narrow
     
     h2:not(.unstyled)
-      @apply text-lg
-      @apply leading-lg-narrow
+      @apply text-lg-narrow
     
     h3:not(.unstyled),
     h4:not(.unstyled),
     h5:not(.unstyled),
     h6:not(.unstyled)
-      @apply text-base
-      @apply leading-base-narrow
+      @apply text-base-narrow
   
   
   /* BUTTONS */

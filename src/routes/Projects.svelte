@@ -30,6 +30,6 @@
 
 <style lang="postcss">
   section.header
-    @apply text-lg leading-lg-narrow
+    @apply text-lg-narrow
 
 </style>
