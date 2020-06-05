@@ -30,7 +30,7 @@
   
   p.title
     @apply pt-one-and-half-b pb-1b
-    @apply font-bold text-xl
+    @apply font-bold text-xl leading-none
   
   p.desc
     @apply font-barlow-semi-condensed
