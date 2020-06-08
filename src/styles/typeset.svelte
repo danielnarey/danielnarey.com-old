@@ -63,8 +63,8 @@
     list-style-type: none
   
   .typeset ul:not(.unstyled) li::before
-    @apply text-base
     content: "\2022"
+    font-size: 1rem
     letter-spacing: 19.02px
   
   .typeset ul:not(.unstyled) li
@@ -88,10 +88,8 @@
   
   .typeset blockquote
     @apply mr-1b
-    @apply px-2b
-    @apply py-half-b
-    @apply border-l-5
-    @apply border-softer-yellow
+    @apply px-2b py-half-b
+    @apply border-l-5 border-softer-yellow
     @apply bg-light-yellow
 
 </style>

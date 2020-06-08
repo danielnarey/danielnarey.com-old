@@ -51,19 +51,16 @@
   /* HEADINGS */
   
   h1:not(.unstyled)
-    @apply font-extrabold
-    @apply text-lg-narrow
+    @apply font-extrabold text-lg-narrow
   
   h2:not(.unstyled)
-    @apply font-bold
-    @apply text-base-narrow
+    @apply font-bold text-base-narrow
   
   h3:not(.unstyled),
   h4:not(.unstyled),
   h5:not(.unstyled),
   h6:not(.unstyled)
-    @apply font-semibold
-    @apply text-sm-narrow
+    @apply font-semibold text-sm-narrow
   
   
   @screen c17

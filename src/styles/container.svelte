@@ -1,7 +1,6 @@
 <style lang="postcss" global>
   .container
-    @apply w-full
-    @apply max-w-10c
+    @apply w-full max-w-10c
     @apply mx-auto
   
   

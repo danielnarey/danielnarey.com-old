@@ -5,10 +5,8 @@
   
   @screen c11
     .sidebar
-      @apply fixed
       @apply w-5c
-      @apply h-screen
-      @apply overflow-y-scroll
+      @apply fixed h-screen overflow-y-scroll
   
   @screen c17
     .sidebar
