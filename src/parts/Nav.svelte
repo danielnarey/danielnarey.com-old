@@ -1,42 +1,21 @@
 <script>
-  import { onMount } from 'svelte';
-  import routes from '../routes/index.js';
+  import routes from '../routes.js';
   
-  let currentPath;
-  
-  onMount(() => {
-    currentPath = window.location.pathname;
-  });
-  
-  const navigate = (path) => () => {
-    history.pushState(path, null, path);
-    
-    if (window.innerWidth >= 704) {
-      document.querySelector('main').scrollIntoView(true);
-    }
-
-    currentPath = path;
-  };
+  export let title;
 
 </script>
 
 
 <template lang="pug">
   nav
-    ul(
-      role='tablist'
-      aria-orientation='vertical'
-    )
-      +each('routes as { path, label }, i')
-        li
-          button(
-            id='nav-tab-{i}'
-            role='tab'
-            aria-controls='main-tabpanel-{i}'
-            aria-selected='{currentPath === path}'
-            class:active='{currentPath === path}'
-            on:click='{navigate(path)}'
-          )= '{label}'
+    ul
+      +each('routes as tab')
+        +if('tab.title')
+          li
+            a.unstyled.button(
+              href='{tab.path}'
+              class:active='{tab.title === title}'
+            )= '{tab.title}'
 
 </template>
 
@@ -50,16 +29,16 @@
     @apply bg-light-red
     @apply text-dark
   
-  li > button
+  li > a
     @apply w-full
     @apply px-2b
     @apply border-bright-red
     @apply font-bold text-xs leading-xl tracking-wide uppercase text-left
           
-  li:not(:last-child) > button
+  li:not(:last-child) > a
     @apply border-b
     
-  li > button.active
+  li > a.active
     @apply bg-bright-red
     @apply text-white
   
@@ -77,7 +56,7 @@
     ul
       @apply border-l border-r rounded
     
-    li > button
+    li > a
       @apply text-sm leading-2xl
 
 </style>

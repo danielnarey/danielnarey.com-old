@@ -2,7 +2,7 @@
   section.header
     p What I'm building on my own time.
 
-  section
+  section.typeset
     :md
       ## Design & Color System
 

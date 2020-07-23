@@ -43,7 +43,6 @@
   pre
     @apply text-xs
   
-  
   @screen c17
     pre
       @apply text-sm
@@ -62,7 +61,6 @@
   h6:not(.unstyled)
     @apply font-semibold text-sm-narrow
   
-  
   @screen c17
     h1:not(.unstyled)
       @apply text-xl-narrow
@@ -75,7 +73,6 @@
     h5:not(.unstyled),
     h6:not(.unstyled)
       @apply text-base-narrow
-  
   
   /* BUTTONS */
   
@@ -90,20 +87,17 @@
     -webkit-appearance: none
     -moz-appearance: none
   
-  
   /* IMAGE SIZING */
   
   div > img,
   figure > img
     @apply w-full
     
-  
   /* SPACING FOR CONTENT SECTIONS */
   
   section
     @apply w-full
     @apply pb-2b
-  
   
   @screen c17
     section

@@ -2,7 +2,7 @@
   section.header
     p What I'm attuned to at the moment.
 
-  section.content
+  section.content.typeset
     :md
       *1/25/20*
 

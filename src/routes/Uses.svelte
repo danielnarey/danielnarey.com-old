@@ -2,7 +2,7 @@
   section.header
     p What technologies I use and why.
 
-  section.content
+  section.content.typeset
     :md
       ## Developer Setup
 

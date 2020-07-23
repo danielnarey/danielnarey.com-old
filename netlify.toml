@@ -1,9 +1,19 @@
 [build]
-  base    = "/"
+  base = "/"
+  functions = "lambda/"
   publish = "dist"
   command = "npm run build:dev"
+
+[dev]
+  framework = "#custom"
+  command = "npm run serve"
+  targetPort = 5000
+  port = 8080
+  publish = "dist"
+  autoLaunch = false
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+

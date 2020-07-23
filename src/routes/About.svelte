@@ -1,12 +1,12 @@
 <template lang="pug">
-  section
+  section.typeset
     :md(class='hello')
       Hi, I'm Daniel. ![Waving hand emoji](1F44B.svg)
     
     :md(class='header')
       I'm a [web developer/designer](https://medium.com/chingu/website-builder-vs-web-developer-vs-designer-vs-consultant-6a8de6ffd5f7) based in Pittsburgh, working primarily with [Node.js](https://hackernoon.com/7-upcoming-nodejs-trends-to-watch-in-2020-6zh32tr) and modern [build tools](https://www.freecodecamp.org/news/making-sense-of-front-end-build-tools-3a1b3a87043b/) for the [JAMstack](https://medium.com/memory-leak/the-jamstack-its-pretty-sweet-e0834e4e6bb7).
 
-  section
+  section.typeset
     :md
       ## What I'm Working On
 

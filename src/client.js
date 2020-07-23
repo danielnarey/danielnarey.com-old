@@ -1,10 +1,9 @@
-/* global document */
+/* eslint no-console: off */
 
 import App from './index.svelte';
 
-
 try {
-  const client = new App({
+  const Client = new App({
     target: document.body,
     hydrate: true,
   });
