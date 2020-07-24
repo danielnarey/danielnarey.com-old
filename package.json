@@ -21,7 +21,6 @@
     "update": "updtr"
   },
   "dependencies": {
-    "@iarna/toml": "^2.2.5",
     "@metamodern/copy-typefaces": "^2.0.4",
     "@metamodern/design-system": "^2.0.1",
     "@metamodern/pug-filter-markdown": "^1.0.1",
