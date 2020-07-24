@@ -1,4 +1,6 @@
 <template lang="pug">
+  h1 About
+
   section.typeset
     :md(class='hello')
       Hi, I'm Daniel. ![Waving hand emoji](1F44B.svg)

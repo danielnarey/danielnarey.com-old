@@ -1,4 +1,6 @@
 <template lang="pug">
+  h1 Uses
+
   section.header
     p What technologies I use and why.
 

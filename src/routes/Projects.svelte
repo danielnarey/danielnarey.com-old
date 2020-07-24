@@ -1,4 +1,6 @@
 <template lang="pug">
+  h1 Projects
+
   section.header
     p What I'm building on my own time.
 

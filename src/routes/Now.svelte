@@ -1,4 +1,6 @@
 <template lang="pug">
+  h1 Now
+
   section.header
     p What I'm attuned to at the moment.
 

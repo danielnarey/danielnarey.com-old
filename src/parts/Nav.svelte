@@ -12,7 +12,7 @@
       +each('routes as tab')
         +if('tab.title')
           li
-            a.unstyled.button(
+            a.button(
               href='{tab.path}'
               class:active='{tab.title === title}'
             )= '{tab.title}'
@@ -29,18 +29,18 @@
     @apply bg-light-red
     @apply text-dark
   
-  li > a
+  a.button
     @apply w-full
     @apply px-2b
     @apply border-bright-red
     @apply font-bold text-xs leading-xl tracking-wide uppercase text-left
-          
-  li:not(:last-child) > a
-    @apply border-b
     
-  li > a.active
+  a.button.active
     @apply bg-bright-red
     @apply text-white
+          
+  li:not(:last-child) > a.button
+    @apply border-b
   
   
   @screen c11
@@ -56,7 +56,7 @@
     ul
       @apply border-l border-r rounded
     
-    li > a
+    a.button
       @apply text-sm leading-2xl
 
 </style>
