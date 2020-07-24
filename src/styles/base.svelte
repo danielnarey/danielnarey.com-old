@@ -86,7 +86,7 @@
   
   @screen c17
     pre
-    @apply text-sm
+      @apply text-sm
     
   /* DISPLAY FIX FOR ICONS AND TAGS */
   
