@@ -12,7 +12,7 @@
   "scripts": {
     "build": "rollup -c --silent && del dist/* && svelte-render",
     "build:dev": "rollup -c --silent && del dist/* && svelte-render --development",
-    "local": "netlify build && netlify dev",
+    "local": "netlify build --context deploy-preview && netlify dev",
     "lint": "eslint --fix src",
     "merge:next": "git checkout master && git pull && git merge next -s recursive -Xtheirs",
     "serve": "sirv dist -s --port=5000",
