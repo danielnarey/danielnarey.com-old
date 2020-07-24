@@ -33,7 +33,7 @@
     h4:not(.unstyled),
     h5:not(.unstyled),
     h6:not(.unstyled)
-    @apply text-base-narrow
+      @apply text-base-narrow
     
   /* INLINE */
   
