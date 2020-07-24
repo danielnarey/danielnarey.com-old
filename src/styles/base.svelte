@@ -47,19 +47,13 @@
   a:not(.unstyled):not(.button)
     @apply text-medium-blue
   
-  .text-white a:not(.unstyled):not(.button),
-  .text-near-white a:not(.unstyled):not(.button),
-  .text-lighter a:not(.unstyled):not(.button),
-  .text-light a:not(.unstyled):not(.button)
+  .dark-bg a:not(.unstyled):not(.button)
     @apply text-bright-green
   
   a:visited:not(.unstyled):not(.button)
     @apply text-medium-purple
   
-  .text-white a:visited:not(.unstyled):not(.button),
-  .text-near-white a:visited:not(.unstyled):not(.button),
-  .text-lighter a:visited:not(.unstyled):not(.button),
-  .text-light a:visited:not(.unstyled):not(.button)
+  .dark-bg a:visited:not(.unstyled):not(.button)
     @apply text-medium-light-red    
   
   /* BUTTONS */
