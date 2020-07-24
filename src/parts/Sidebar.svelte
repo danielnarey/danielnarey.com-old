@@ -9,7 +9,11 @@
       
       p.title= 'Daniel Narey'
       
-      p.desc= 'Node.js developer, visual designer & JAMstack enthusiast'
+      p.desc= `
+        Creative developer fluent in ES6+, Node.js build systems, and visual
+        design language. Fan of Svelte, Tailwind, Netlify, FaunaDB, and the
+        Jamstack paradigm.
+      `
       
     slot
 
@@ -27,11 +31,11 @@
     @apply pt-1b px-1b pb-2b
 
   .wrapper
-    @apply w-full max-w-5c
+    @apply w-full max-w-4c
     @apply mx-auto
   
   img
-    @apply border rounded border-darker-blue
+    @apply border rounded-full border-darker-blue
     
   p
     @apply text-lighter
@@ -47,7 +51,7 @@
 
   @screen c11
     #sidebar
-      @apply w-5c
+      @apply w-4c
       @apply fixed h-screen overflow-y-scroll
       @apply border-r
       
