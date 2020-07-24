@@ -1,5 +1,5 @@
 <template lang="pug">
-  footer.circuit-board
+  footer.dark-bg.circuit-board
     .container
       :md(tag='section')
         Built with Svelte and [Metamodern Design's](https://github.com/metamodern-design) open-source stack

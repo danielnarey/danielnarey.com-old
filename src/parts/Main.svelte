@@ -13,7 +13,7 @@
         slot
       
       p.nav
-        button.unstyled(on:click='{scrollToTop}')
+        button(on:click='{scrollToTop}')
           span= '▲ Top'
     
 </template>
@@ -32,7 +32,7 @@
     @apply text-center
   
   button
-    @apply text-base font-bold text-medium-orange
+    @apply text-base font-bold text-medium-red
     
   
   @screen c17

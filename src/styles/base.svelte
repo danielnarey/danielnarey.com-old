@@ -59,7 +59,7 @@
   /* BUTTONS */
   
   a.button
-    @apply block
+    @apply inline-block
   
   button,
   a.button
