@@ -31,6 +31,9 @@
 
 
 <style lang="postcss">
+  h1
+    @apply mb-2b
+  
   section.header
     @apply text-lg-narrow
 

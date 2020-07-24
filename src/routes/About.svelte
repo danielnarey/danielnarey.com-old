@@ -28,6 +28,9 @@
 
 
 <style lang="postcss">
+  h1
+    @apply mb-2b
+
   .hello
     @apply mb-1b
     @apply text-xl-narrow
