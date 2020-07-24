@@ -59,7 +59,7 @@
   .text-white a:visited:not(.unstyled):not(.button),
   .text-near-white a:visited:not(.unstyled):not(.button),
   .text-lighter a:visited:not(.unstyled):not(.button),
-  .text-light a:visited:not(.unstyled):not(.button),
+  .text-light a:visited:not(.unstyled):not(.button)
     @apply text-medium-light-red    
   
   /* BUTTONS */
