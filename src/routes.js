@@ -10,7 +10,8 @@ const routes = [
     component: About,
     title: 'About',
   },
-  { path: '/projects',
+  {
+    path: '/projects',
     component: Projects,
     title: 'Projects',
   },

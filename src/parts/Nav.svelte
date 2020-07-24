@@ -1,5 +1,5 @@
 <script>
-  import routes from '../routes.js';
+  import Routes from '../routes.js';
   
   export let title;
 
@@ -9,13 +9,13 @@
 <template lang="pug">
   nav
     ul
-      +each('routes as tab')
-        +if('tab.title')
+      +each('Routes as entry')
+        +if('entry.title')
           li
             a.button(
-              href='{tab.path}'
-              class:active='{tab.title === title}'
-            )= '{tab.title}'
+              href='{entry.path}'
+              class:active='{entry.title === title}'
+            )= '{entry.title}'
 
 </template>
 

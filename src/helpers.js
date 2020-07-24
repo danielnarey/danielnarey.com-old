@@ -3,7 +3,7 @@ import { loadedPosts } from './store.js';
 
 
 export const fetchPost = async (slug) => {
-  const data = get(loadedPost).get(slug);
+  const data = get(loadedPosts).get(slug);
 
   if (data) {
     return ({ data });
