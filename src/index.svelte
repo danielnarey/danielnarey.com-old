@@ -11,7 +11,6 @@
   let PageContent;
   let Props = {};
   let Navaid = navaid('/');
-  let contentLoaded = false;
   
   routes.forEach(({ path, redirect, component, ...routeParams }) => {
     Navaid.on(path, (pathParams) => {
@@ -29,8 +28,9 @@
   });
   
   afterUpdate(() => {
-    window.scrollTo({ top: 0 });
-    contentLoaded = true;
+    if (window.innerWidth >= 704) {
+      window.scrollTo({ top: 0 });
+    }
   });
 
   onDestroy(() => {
