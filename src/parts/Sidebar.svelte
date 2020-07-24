@@ -3,17 +3,17 @@
     header
       .wrapper
         img(
-          src='portrait.png'
+          src='/portrait.png'
           alt='Cartoon drawing of Daniel Narey'
         )
       
-      p.title= 'Daniel Narey'
+      p.title
+        | Daniel Narey
       
-      p.desc= `
-        Creative developer fluent in ES6+, Node.js build systems, and visual
-        design language. Fan of Svelte, Tailwind, Netlify, FaunaDB, and the
-        Jamstack paradigm.
-      `
+      p.desc
+        | Creative developer fluent in ES6+, Node.js build systems, and visual
+        | design language. Fan of Svelte, Tailwind, Netlify, FaunaDB, and the
+        | Jamstack paradigm.
       
     slot
 
