@@ -4,6 +4,9 @@
   publish = "dist"
   command = "npm run build:dev"
 
+[context.production]
+  command = "npm run build"
+
 [dev]
   framework = "#custom"
   command = "npm run serve"
