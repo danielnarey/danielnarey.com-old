@@ -32,7 +32,7 @@
     @apply text-center
   
   button
-    @apply text-base font-bold text-medium-red
+    @apply text-base font-bold text-bright-red
     
   
   @screen c17

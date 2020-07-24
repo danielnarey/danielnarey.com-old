@@ -61,7 +61,7 @@
   
   .typeset ul:not(.unstyled) li::before
     content: "\2022"
-    font-size: 1rem
+    font-size: 1em
     letter-spacing: 19px
   
   .typeset ul:not(.unstyled) li
