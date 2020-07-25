@@ -44,8 +44,9 @@
 
   @screen c11
     #sidebar
-      @apply fixed h-screen overflow-y-scroll
+      @apply fixed z-20
       @apply w-4c
+      @apply h-screen overflow-y-scroll
       @apply border-r
     
     header

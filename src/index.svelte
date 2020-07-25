@@ -44,6 +44,8 @@
   #app
     Sidebar
       Nav('{...Props}')
+    
+    .
 
     Main
       +if('PageContent')
@@ -56,15 +58,31 @@
 
 <style lang="postcss">
   @import 'typeface-barlow'
-  @import 'typeface-barlow-semi-condensed'
   @import 'typeface-source-code-pro'
 
   #app
     @apply bg-near-white
-    @apply text-darker font-barlow font-regular text-sm
-
+    @apply text-darker
+    @apply font-barlow font-regular text-sm
+  
+  .content-border
+    @apply w-screen
+    @apply border-t-8 border-softer-blue
+    
+  @screen c11
+    .content-border
+      @apply fixed z-10
+    
   @screen c17
-    #app
-      @apply text-base
+    .content-border
+      @apply w-17c
+  
+  @screen c21
+    .content-border
+      @apply w-19c
+  
+  @media print
+    .content-border
+      @apply display-none
 
 </style>
