@@ -29,14 +29,14 @@
   header
     @apply w-full max-w-4c
     @apply mx-auto
-    @apply p-2b
+    @apply py-2b
   
   img
     @apply border rounded-full border-darker-blue
 
   p.title
-    @apply pt-2b pb-1b
-    @apply font-semibold text-lg leading-none
+    @apply pt-one-and-half-b pb-three-quarter-b
+    @apply font-semibold text-xl leading-none
   
   p.desc
     @apply text-sm-narrow
@@ -51,17 +51,19 @@
     header
       @apply max-w-none
       @apply mx-0
+      @apply px-2b
 
   @screen c17
     #sidebar
       @apply w-5c
-      
+
     header
       @apply pt-3b
-      
+
   @screen c21
     #sidebar
-      @apply w-6c
+      @apply w-7c
+      @apply pl-2c
       
   @media print
     #sidebar

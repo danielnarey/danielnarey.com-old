@@ -9,8 +9,7 @@
 <template lang="pug">        
   main
     .container
-      #pageContent
-        slot
+      slot
       
       p.nav
         button(on:click='{scrollToTop}')
@@ -23,9 +22,6 @@
   main
     @apply w-screen min-h-screen
     @apply py-2b
-    
-  #pageContent
-    @apply px-1b
   
   p.nav
     @apply w-full

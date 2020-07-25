@@ -28,12 +28,12 @@
     @apply border-t border-b border-bright-red
     @apply bg-light-red
     @apply text-dark
+    @apply font-bold text-xs leading-xl tracking-wide uppercase text-left
   
   a.button
     @apply w-full
     @apply px-2b
     @apply border-bright-red
-    @apply font-bold text-xs leading-xl tracking-wide uppercase text-left
     
   a.button.active
     @apply bg-bright-red
@@ -50,5 +50,8 @@
 
     ul
       @apply border-l border-r rounded
+
+    a.button
+      @apply px-1b
 
 </style>
