@@ -1,14 +1,13 @@
-import About from './routes/About.svelte';
+import Journal from './routes/Journal.svelte';
 import Projects from './routes/Projects.svelte';
 import Uses from './routes/Uses.svelte';
-import Now from './routes/Now.svelte';
 
 
 const routes = [
   {
     path: '/',
-    component: About,
-    title: 'About',
+    component: Journal,
+    title: 'Journal',
   },
   {
     path: '/projects',
@@ -19,11 +18,6 @@ const routes = [
     path: '/uses',
     component: Uses,
     title: 'Uses',
-  },
-  {
-    path: '/now',
-    component: Now,
-    title: 'Now',
   },
   {
     path: '/*',

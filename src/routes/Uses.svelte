@@ -78,10 +78,5 @@
   
   section.content
     @apply text-sm-narrow
-  
-
-  @screen c17
-    section.content
-      @apply text-base-narrow
 
 </style>
