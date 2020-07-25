@@ -18,6 +18,6 @@
     @apply text-xl-narrow
   
   .header
-    @apply text-lg
+    @apply text-lg-narrow
 
 </style>
