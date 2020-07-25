@@ -53,12 +53,18 @@
       @apply mx-0
       @apply px-2b
 
+    p.desc
+      @apply text-xs-narrow
+
   @screen c17
     #sidebar
       @apply w-5c
 
     header
       @apply pt-3b
+
+    p.desc
+      @apply text-sm-narrow
 
   @screen c21
     #sidebar

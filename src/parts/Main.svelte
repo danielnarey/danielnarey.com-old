@@ -8,6 +8,7 @@
 
 <template lang="pug">        
   main
+    .border
     .container
       slot
       
@@ -21,7 +22,11 @@
 <style lang="postcss">
   main
     @apply w-screen min-h-screen
-    @apply py-2b
+    @apply pt-one-and-half-b pb-2b
+
+  .border
+    @apply w-full
+    @apply border-t-8 border-softer-blue
   
   p.nav
     @apply w-full
@@ -33,7 +38,14 @@
   
   @screen c17
     main
-      @apply py-3b
+      @apply pt-two-and-half-b pb-3b
+
+    .border
+      @apply w-17c
+
+  @screen c21
+    .border
+      @apply w-19c
       
   @media print
     p.nav
