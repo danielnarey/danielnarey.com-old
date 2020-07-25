@@ -29,17 +29,17 @@
   header
     @apply w-full max-w-4c
     @apply mx-auto
-    @apply px-one-and-half-b pt-1b pb-2b
+    @apply p-2b
   
   img
     @apply border rounded-full border-darker-blue
 
   p.title
-    @apply pt-one-and-half-b pb-1b
+    @apply pt-2b pb-1b
     @apply font-bold text-lg leading-none
   
   p.desc
-    @apply text-sm-narrow
+    @apply font-medium text-sm-narrow
     
 
   @screen c11
@@ -47,9 +47,10 @@
       @apply fixed h-screen overflow-y-scroll
       @apply w-4c
       @apply border-r
-      
+    
     header
-      @apply pt-2b
+      @apply max-w-none
+      @apply mx-0
 
   @screen c17
     #sidebar
