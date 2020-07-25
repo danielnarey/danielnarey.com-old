@@ -56,7 +56,7 @@
       @apply w-5c
       
     header
-      @apply pt-3t
+      @apply pt-3b
       
   @screen c21
     #sidebar
