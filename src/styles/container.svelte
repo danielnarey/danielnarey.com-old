@@ -5,15 +5,20 @@
   
   @screen c11
     .container
-      @apply max-w-full
+      @apply max-w-16c
       @apply mx-0
-      @apply pr-1b
-      padding-left: 21rem
+      @apply pr-2b
+      padding-left: 18rem
 
   @screen c17
     .container
-      padding-left: calc(50vw - 8rem)
-      padding-right: calc(50vw - 32rem)
+      @apply max-w-19c
+      padding-left: 22rem
+      
+  @screen c21
+    .container
+      @apply max-w-20c
+      padding-left: 26rem
   
   @media print
     .container

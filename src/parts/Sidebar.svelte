@@ -1,11 +1,10 @@
 <template lang="pug">
   #sidebar
     header
-      .wrapper
-        img(
-          src='/portrait.png'
-          alt='Cartoon drawing of Daniel Narey'
-        )
+      img(
+        src='/portrait.png'
+        alt='Cartoon drawing of Daniel Narey'
+      )
       
       p.title
         | Daniel Narey
@@ -22,54 +21,45 @@
 
 <style lang="postcss">
   #sidebar
-    @apply w-full
+    @apply w-screen
     @apply border-darker-blue
     @apply bg-darker-blue
+    @apply text-lighter
     
   header
-    @apply w-screen
-    @apply pt-1b px-1b pb-2b
-
-  .wrapper
     @apply w-full max-w-4c
     @apply mx-auto
+    @apply px-one-and-half-b pt-1b pb-2b
   
   img
     @apply border rounded-full border-darker-blue
-    
-  p
-    @apply text-lighter
-  
+
   p.title
     @apply pt-one-and-half-b pb-1b
-    @apply font-bold text-xl leading-none
+    @apply font-bold text-lg leading-none
   
   p.desc
-    @apply font-barlow-semi-condensed
     @apply text-sm-narrow
     
 
   @screen c11
     #sidebar
-      @apply w-4c
       @apply fixed h-screen overflow-y-scroll
+      @apply w-4c
       @apply border-r
       
     header
-      @apply w-full
       @apply pt-2b
-      
 
   @screen c17
     #sidebar
-      width: calc(50vw - 10rem)
-      padding-left: calc(50vw - 32rem)
-      padding-right: 1rem
+      @apply w-5c
       
     header
-      @apply pt-3b
-
-    p.desc
-      @apply text-base-narrow
+      @apply pt-3t
+      
+  @screen c21
+    #sidebar
+      @apply w-6c
   
 </style>
