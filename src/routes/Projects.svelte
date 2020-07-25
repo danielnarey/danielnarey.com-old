@@ -4,8 +4,8 @@
   section.header
     p What I'm building on my own time.
 
-  section.typeset
-    :md
+  section.body
+    :md(class='typeset')
       ## FolkDB
       
       I'm currently prototyping a music database with a focus on the folk (or "traditional", or "old-time") music of North America and the British Isles, as this music has been rediscovered and reinterpreted in the recording era. The goal is to aid discovery by linking a variety of resources that are already available online, from streaming audio to digitized print materials to historical and biographical information. I should have something to share publicly in the near future.
@@ -27,5 +27,10 @@
   
   section.header
     @apply text-lg-narrow
+    
+  @screen c17
+    section.body
+      @apply text-base
+      
 
 </style>

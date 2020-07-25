@@ -4,8 +4,8 @@
   section.header
     p What technologies I use and why.
 
-  section.content.typeset
-    :md
+  section.content
+    :md(class='typeset')
       ## Developer Setup
 
       Last year, I replaced my old MacBook with an iPad Pro, and I am now able to use it for 99% of what I do as a developer. Keeping my local changes synced with cloud repositories has improved my workflow, and the iPad's Liquid Retina / True Tone display is saving my eyesight. Here's my setup:
@@ -77,6 +77,10 @@
     @apply text-lg-narrow
   
   section.content
-    @apply text-sm-narrow
+    @apply text-sm-narrow  
+    
+  @screen c17
+    section.content
+      @apply text-base-narrow
 
 </style>
