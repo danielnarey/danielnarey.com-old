@@ -67,7 +67,7 @@
   
   .content-border
     @apply w-screen
-    @apply border-t-8 border-softer-blue
+    @apply border-t-8 border-light-red
     
   @screen c11
     .content-border
@@ -83,6 +83,6 @@
   
   @media print
     .content-border
-      @apply display-none
+      display: none
 
 </style>
