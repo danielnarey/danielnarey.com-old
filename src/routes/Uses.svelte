@@ -77,10 +77,10 @@
     @apply text-lg-narrow
   
   section.content
-    @apply text-sm-narrow  
+    @apply text-sm
     
   @screen c17
     section.content
-      @apply text-base-narrow
+      @apply text-base
 
 </style>
