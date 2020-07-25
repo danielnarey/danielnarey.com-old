@@ -41,22 +41,14 @@
           
   li:not(:last-child) > a.button
     @apply border-b
-  
-  
+
+
   @screen c11
     nav
       @apply w-full
-      @apply pb-4b
-
-
-  @screen c17
-    nav
-      @apply px-1b
+      @apply px-2b pb-4b
 
     ul
       @apply border-l border-r rounded
-    
-    a.button
-      @apply text-sm leading-2xl
 
 </style>

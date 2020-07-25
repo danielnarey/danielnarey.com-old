@@ -24,7 +24,7 @@
     @apply w-screen
     @apply border-darker-blue
     @apply bg-darker-blue
-    @apply text-lighter
+    @apply text-near-white
     
   header
     @apply w-full max-w-4c
@@ -36,10 +36,10 @@
 
   p.title
     @apply pt-2b pb-1b
-    @apply font-bold text-lg leading-none
+    @apply font-semibold text-lg leading-none
   
   p.desc
-    @apply font-medium text-sm-narrow
+    @apply text-sm-narrow
     
 
   @screen c11
@@ -62,5 +62,9 @@
   @screen c21
     #sidebar
       @apply w-6c
+      
+  @media print
+    #sidebar
+      display: none
   
 </style>
