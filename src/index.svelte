@@ -45,7 +45,7 @@
     Sidebar
       Nav('{...Props}')
     
-    .
+    .content-border
 
     Main
       +if('PageContent')
