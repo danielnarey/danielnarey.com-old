@@ -14,7 +14,7 @@
       - __Code editor:__ [Textastic](https://www.textasticapp.com/)
       - __Git client:__ [Working Copy](https://workingcopyapp.com/)
       - __Terminal emulator & Mosh/SSH client:__ [Blink](http://www.blink.sh/)
-      - __Remote development server:__ [Digital Ocean Droplet](https://www.digitalocean.com/products/droplets/) running [Ubuntu 18](https://ubuntu.com/server) with [Node.js 12](https://nodejs.org/en/) installed ($5/mo. for 1GB memory / 25 GB SSD)
+      - __Remote development server:__ [Digital Ocean Droplet](https://www.digitalocean.com/products/droplets/) running [Ubuntu 18](https://ubuntu.com/server) with [Node.js 14](https://nodejs.org/en/) installed ($5/mo. for 1GB memory / 25 GB SSD)
       - __Git host providers:__ [GitHub](https://github.com/) for public projects, [GitLab](https://about.gitlab.com/) for client work
       - __Browser dev tools for iOS:__ [Inspector](https://apps.apple.com/us/app/inspect-browser/id1203594958) - not perfect, but useful to have
       
@@ -26,9 +26,9 @@
       ### JS/Node
       
       - __Component Framework:__ [Svelte](https://svelte.dev)
-      - __Bundler:__ ~~Webpack~~ (too much configuration, bloated features/ecosystem) ➔ [Rollup](http://rollupjs.org/guide/en/) - powerful and incredibly simple to use
+      - __Bundler:__ ~~Webpack~~ (too much configuration, bloated features/ecosystem) ➔ [Rollup](http://rollupjs.org/guide/en/) (powerful and incredibly simple to use)
       - __Transpiler:__ [Babel](https://babeljs.io/) configured with [preset-env](https://babeljs.io/docs/en/babel-preset-env), [core-js@3](https://github.com/zloirock/core-js/blob/master/docs/2019-03-19-core-js-3-babel-and-a-look-into-the-future.md), and "useBuiltIns" option set to ["usage"](https://babeljs.io/docs/en/babel-preset-env#usebuiltins-usage)
-      - __Browser targeting:__ [Browserslist](https://github.com/browserslist/browserslist#queries) configured to "> 1.5% in US, Firefox ESR, not ie <= 11, not dead"
+      - __Browser targeting:__ [Browserslist](https://github.com/browserslist/browserslist#queries) configured to `"> 1.5% in US, Firefox ESR, not ie <= 11, not dead"`
       - __Minifier:__ [Terser](https://terser.org/)
       - __Linter:__ [ESLint](https://eslint.org/)
       - __Style guide:__ [Airbnb](https://github.com/airbnb/javascript)
@@ -51,8 +51,9 @@
       When possible, I choose to use/buy services from companies that place human values and product excellence above the drive for market domination. Here are a few I've been using for a while:
       
       - __Web hosting:__ [Netlify](https://www.netlify.com/)
+      - __Distributed database:__ [FaunaDB](https://fauna.com/)
       - __Email:__ [Fastmail](https://www.fastmail.com/about/)
-      - __Cloud storage:__ [pCloud](https://www.pcloud.com/)
+      - __File storage:__ [pCloud](https://www.pcloud.com/)
       - __Streaming music:__ [TIDAL](https://tidal.com/)
       
       ## Other Software
