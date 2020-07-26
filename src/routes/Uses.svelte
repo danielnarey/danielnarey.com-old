@@ -18,16 +18,17 @@
       - __Git host providers:__ [GitHub](https://github.com/) for public projects, [GitLab](https://about.gitlab.com/) for client work
       - __Browser dev tools for iOS:__ [Inspector](https://apps.apple.com/us/app/inspect-browser/id1203594958) - not perfect, but useful to have
       
-      
+
       ## Code Utilities
       
       Keeping up with the latest trends in Node.js tooling and evaluating alternate packages/frameworks has helped me to be more productive. By selecting a reliable technology stack, I have been able to successfully automate parts of my development workflow. Here are some of the packages I depend upon the most:
       
       ### JS/Node
       
-      - __Bundler:__ ~~Webpack~~ (too much configuration, bloated features/ecosystem) ➔ ~~Parcel~~ (not enough configuration, not stable yet) ➔ [Rollup](http://rollupjs.org/guide/en/) - the simplest solution with enough options and plugins for most use cases
+      - __Component Framework:__ [Svelte](https://svelte.dev)
+      - __Bundler:__ ~~Webpack~~ (too much configuration, bloated features/ecosystem) ➔ [Rollup](http://rollupjs.org/guide/en/) - powerful and incredibly simple to use
       - __Transpiler:__ [Babel](https://babeljs.io/) configured with [preset-env](https://babeljs.io/docs/en/babel-preset-env), [core-js@3](https://github.com/zloirock/core-js/blob/master/docs/2019-03-19-core-js-3-babel-and-a-look-into-the-future.md), and "useBuiltIns" option set to ["usage"](https://babeljs.io/docs/en/babel-preset-env#usebuiltins-usage)
-      - __Browser targeting:__ [Browserslist](https://github.com/browserslist/browserslist#queries) configured to "> 1% in US, last 1 version, not dead"
+      - __Browser targeting:__ [Browserslist](https://github.com/browserslist/browserslist#queries) configured to "> 1.5% in US, Firefox ESR, not ie <= 11, not dead"
       - __Minifier:__ [Terser](https://terser.org/)
       - __Linter:__ [ESLint](https://eslint.org/)
       - __Style guide:__ [Airbnb](https://github.com/airbnb/javascript)
@@ -37,12 +38,12 @@
       
       - __Pre/post processor:__ ~~Sass~~ ➔ ~~Stylus~~ ➔ [PostCSS](https://postcss.org/)
       - __Syntax:__ ~~Stylus~~ ➔ [SugarSS](https://github.com/postcss/sugarss)
-      - __Framework:__ ~~Bootstrap~~ ➔ ~~Bulma~~ ➔ [TailwindCSS](https://tailwindcss.com/) customized with a complete [HSL color system](https://github.com/metamodern-design/color-system) and proportional size/spacing classes
+      - __Framework:__ ~~Bootstrap~~ ➔ ~~Bulma~~ ➔ [TailwindCSS](https://tailwindcss.com/) customized with [@metamodern/design-system](https://system.metamodern.design)
       
       ### HTML
       
-      - __Template engine:__ [Pug](https://github.com/pugjs/pug#syntax)
-      - __Markdown rendering:__ [Markdown-It](http://markdown-it.github.io/)
+      - __Template syntax:__ [Pug](https://github.com/pugjs/pug#syntax), rendered with [svelte-preprocess](https://github.com/sveltejs/svelte-preprocess)
+      - __Markdown rendering:__ [Markdown-It](http://markdown-it.github.io/) via [@metamodern/pug-filter-markdown](https://www.npmjs.com/package/@metamodern/pug-filter-markdown)
       
       
       ## Cloud Services
@@ -62,7 +63,7 @@
       - __Vector illustration:__ [Affinity Designer](https://affinity.serif.com/en-us/designer/ipad/)
       - __Photo editing:__ [Affinity Photo](https://affinity.serif.com/en-us/photo/ipad/)
 
-  section
+  section.content
     :md
       *Check out "uses" pages from a bunch of other developers [here](https://uses.tech/).*
 

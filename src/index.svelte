@@ -67,7 +67,7 @@
   
   .content-border
     @apply w-screen
-    @apply border-t-8 border-light-red
+    @apply border-t-8 border-bright-red
     
   @screen c11
     .content-border

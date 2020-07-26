@@ -8,7 +8,7 @@
     :md(class='typeset')
       ## FolkDB
       
-      I'm currently prototyping a music database with a focus on the folk (or "traditional", or "old-time") music of North America and the British Isles, as this music has been rediscovered and reinterpreted in the recording era. The goal is to aid discovery by linking a variety of resources that are already available online, from streaming audio to digitized print materials to historical and biographical information. I should have something to share publicly in the near future.
+      I'm currently prototyping a music database with a focus on folk genres of North America and the British Isles, as this music has been rediscovered, reinterpreted, and reinvented in the recording era. The goal is to aid discovery by linking a variety of resources that are already available online, from streaming audio to digitized library materials to historical and biographical information. I expect to have something to share publicly in the near future.
     
       ## CLI Tool for Configuring/Packaging Svelte Apps
       
