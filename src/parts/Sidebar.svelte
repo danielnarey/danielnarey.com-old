@@ -46,7 +46,7 @@
     #sidebar
       @apply fixed z-20
       @apply w-4c
-      @apply h-screen overflow-y-scroll
+      @apply h-screen overflow-y-auto
       @apply border-r
     
     header
