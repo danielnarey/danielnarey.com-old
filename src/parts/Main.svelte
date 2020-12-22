@@ -18,7 +18,7 @@
 </template>
 
 
-<style lang="postcss">
+<style lang="sugarss">
   main
     @apply w-screen min-h-screen
     @apply py-2b

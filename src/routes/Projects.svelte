@@ -21,7 +21,7 @@
 </template>
 
 
-<style lang="postcss">
+<style lang="sugarss">
   h1
     @apply mb-2b
   

@@ -9,7 +9,7 @@
 </template>
 
 
-<style lang="postcss">
+<style lang="sugarss">
   footer
     @apply w-screen min-h-7c
     @apply pt-2b

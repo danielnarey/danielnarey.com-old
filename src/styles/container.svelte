@@ -1,4 +1,4 @@
-<style lang="postcss" global>
+<style lang="sugarss" global>
   .container
     @apply w-full max-w-17c
     @apply px-1b

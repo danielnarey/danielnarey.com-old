@@ -19,7 +19,7 @@
 </template>
 
 
-<style lang="postcss">
+<style lang="sugarss">
   #sidebar
     @apply w-screen
     @apply border-darker-blue

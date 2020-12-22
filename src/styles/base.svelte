@@ -1,4 +1,4 @@
-<style lang="postcss" global>
+<style lang="sugarss" global>
   @tailwind base
   
   html

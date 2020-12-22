@@ -20,7 +20,7 @@
 </template>
 
 
-<style lang="postcss">
+<style lang="sugarss">
   nav
     @apply w-screen
 

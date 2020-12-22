@@ -56,7 +56,7 @@
 </template>
 
 
-<style lang="postcss">
+<style lang="sugarss">
   @import 'typeface-barlow'
   @import 'typeface-source-code-pro'
 
