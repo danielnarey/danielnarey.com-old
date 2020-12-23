@@ -33,7 +33,7 @@
     "sugarss": "^3.0.3",
     "svelte": "^3.31.0",
     "svelte-preprocess": "^4.6.1",
-    "tailwindcss": "^2.0.2",
+    "tailwindcss": "^1.9.6",
     "typeface-barlow": "^1.1.13",
     "typeface-barlow-semi-condensed": "^1.1.13",
     "typeface-source-code-pro": "^1.1.13"
