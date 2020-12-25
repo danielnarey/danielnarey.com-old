@@ -41,7 +41,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
-    "@metamodern/svelte-render": "^3.0.1",
+    "@metamodern/svelte-render": "^3.0.3",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.1",
     "core-js": "^3.8.1",
